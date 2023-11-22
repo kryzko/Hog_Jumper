@@ -21,6 +21,8 @@ namespace Hog_Jumper
             //SoundPlayer Player = new SoundPlayer();
             //Player.SoundLocation = @"D:\\лр\\ТРПО\\Проект\\project\\all\\7.wav";
             //Player.PlayLooping();
+            
+
         }
         int i = 0;
         private void button1_Click(object sender, EventArgs e)
