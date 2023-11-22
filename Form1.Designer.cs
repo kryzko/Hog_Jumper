@@ -42,7 +42,7 @@
             this.button1.ForeColor = System.Drawing.Color.Black;
             this.button1.Image = global::Hog_Jumper.Properties.Resources.Png;
             this.button1.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button1.Location = new System.Drawing.Point(188, 51);
+            this.button1.Location = new System.Drawing.Point(341, 12);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(435, 426);
             this.button1.TabIndex = 0;
