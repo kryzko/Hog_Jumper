@@ -44,6 +44,7 @@
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(435, 426);
             this.button1.TabIndex = 0;
+            this.button1.Tag = "";
             this.button1.Text = "да";
             this.button1.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.button1.UseVisualStyleBackColor = true;
