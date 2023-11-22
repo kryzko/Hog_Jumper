@@ -17,7 +17,7 @@ namespace Hog_Jumper
         {
             InitializeComponent();
             SoundPlayer Player = new SoundPlayer();
-            Player.SoundLocation = "7.wav";
+            Player.SoundLocation = @"D:\\лр\\ТРПО\\Проект\\project\\all\\7.wav";
             Player.PlayLooping();
         }
         int i = 0;
