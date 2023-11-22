@@ -4,6 +4,7 @@ using System.ComponentModel;
 using System.Data;
 using System.Drawing;
 using System.Linq;
+using System.Media;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
@@ -15,6 +16,9 @@ namespace Hog_Jumper
         public Form1()
         {
             InitializeComponent();
+            SoundPlayer Player = new SoundPlayer();
+            Player.SoundLocation = "7.wav";
+            Player.PlayLooping();
         }
         int i = 0;
         private void button1_Click(object sender, EventArgs e)
