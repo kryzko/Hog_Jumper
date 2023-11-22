@@ -42,5 +42,12 @@ namespace Hog_Jumper
             if (j == 5) { this.BackColor = Color.Pink; j = -1; }
             j++;
         }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            Form2 form2 = new Form2();
+            form2.Visible = true;
+            this.Visible = false;
+        }
     }
 }
