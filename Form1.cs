@@ -19,8 +19,9 @@ namespace Hog_Jumper
         int i = 0;
         private void button1_Click(object sender, EventArgs e)
         {
-            if (i == 0) {MessageBox.Show("Сигма"); i = 1; }
-            if (i == 1) { MessageBox.Show("СССИИИСЬКИ"); i = 0; }
+            if (i == 0) { MessageBox.Show("Сигма"); }
+            if (i == 1) { MessageBox.Show("СССИИИСЬКИ"); i = -1; }
+            i++;
         }
     }
 }
