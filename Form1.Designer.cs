@@ -36,9 +36,9 @@
             this.button1.ForeColor = System.Drawing.Color.Black;
             this.button1.Image = global::Hog_Jumper.Properties.Resources.Png;
             this.button1.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button1.Location = new System.Drawing.Point(335, 154);
+            this.button1.Location = new System.Drawing.Point(188, 51);
             this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(258, 182);
+            this.button1.Size = new System.Drawing.Size(435, 364);
             this.button1.TabIndex = 0;
             this.button1.Text = "да";
             this.button1.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
