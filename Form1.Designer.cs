@@ -34,7 +34,7 @@
             // button1
             // 
             this.button1.ForeColor = System.Drawing.Color.Black;
-            this.button1.Image = global::Hog_Jumper.Properties.Resources.праздник;
+            this.button1.Image = global::Hog_Jumper.Properties.Resources.Png;
             this.button1.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.button1.Location = new System.Drawing.Point(335, 154);
             this.button1.Name = "button1";
