@@ -16,9 +16,9 @@ namespace Hog_Jumper
         public Form1()
         {
             InitializeComponent();
-            SoundPlayer Player = new SoundPlayer();
-            Player.SoundLocation = @"D:\\лр\\ТРПО\\Проект\\project\\all\\7.wav";
-            Player.PlayLooping();
+            //SoundPlayer Player = new SoundPlayer();
+            //Player.SoundLocation = @"D:\\лр\\ТРПО\\Проект\\project\\all\\7.wav";
+            //Player.PlayLooping();
         }
         int i = 0;
         private void button1_Click(object sender, EventArgs e)
