@@ -6,6 +6,14 @@ using System.Windows.Forms;
 
 namespace Hog_Jumper
 {
+    class MyApplicationContext : ApplicationContext
+    {
+        public MyApplicationContext()
+        {
+            Form1 form1 = new Form1();
+            form1.Show();
+        }
+    }
     internal static class Program
     {
         /// <summary>
@@ -16,7 +24,8 @@ namespace Hog_Jumper
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new Form1());
+            MyApplicationContext context = new MyApplicationContext();
+            Application.Run(context);
         }
     }
 }
