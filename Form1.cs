@@ -18,10 +18,12 @@ namespace Hog_Jumper
         public Form1()
         {
             InitializeComponent();
-            //SoundPlayer Player = new SoundPlayer();
-            //Player.SoundLocation = @"D:\\лр\\ТРПО\\Проект\\project\\all\\7.wav";
-            //Player.PlayLooping();
-            
+            string projectDirectory = Directory.GetParent(Directory.GetCurrentDirectory()).Parent.FullName;
+            string propertiesPath = Path.Combine(projectDirectory, "Resources");
+            SoundPlayer Player = new SoundPlayer();
+            Player.SoundLocation = Path.Combine(propertiesPath, "7.wav"); ;
+            Player.PlayLooping();
+
 
         }
         int i = 0;
