@@ -18,35 +18,38 @@ namespace Hog_Jumper
         public Form1()
         {
             InitializeComponent();
-            string projectDirectory = Directory.GetParent(Directory.GetCurrentDirectory()).Parent.FullName;
-            string propertiesPath = Path.Combine(projectDirectory, "Resources");
-            SoundPlayer Player = new SoundPlayer();
-            Player.SoundLocation = Path.Combine(propertiesPath, "7.wav"); ;
-            Player.PlayLooping();
-        }
-        int i = 0;
-        private void button1_Click(object sender, EventArgs e)
-        {
-            if (i == 0) { MessageBox.Show("Сигма"); }
-            if (i == 1) { MessageBox.Show("СССИИИСЬКИ"); i = -1; }
-            i++;
-        }
-        int j = 0;
-        private void timer1_Tick(object sender, EventArgs e)
-        {
-            if(j==0) { this.BackColor = Color.Red; }
-            if (j == 1) { this.BackColor = Color.Yellow; }
-            if (j == 2) { this.BackColor = Color.Green; }
-            if (j == 3) { this.BackColor = Color.Blue; }
-            if (j == 4) { this.BackColor = Color.Purple; }
-            if (j == 5) { this.BackColor = Color.Pink; j = -1; }
-            j++;
         }
 
-        private void button2_Click(object sender, EventArgs e)
+        private void pictureBox1_Click(object sender, EventArgs e)
+        {
+            Application.Exit();
+        }
+
+        private void pictureBox2_Click(object sender, EventArgs e)
         {
             Form2 form2 = new Form2();
-            form2.Visible = true;
+            form2.Show();
+            this.Visible = false;
+        }
+
+        private void pictureBox3_Click(object sender, EventArgs e)
+        {
+            Form3 form3 = new Form3();
+            form3.Show();
+            this.Visible = false;
+        }
+
+        private void pictureBox4_Click(object sender, EventArgs e)
+        {
+            Form4 form4 = new Form4();
+            form4.Show();
+            this.Visible = false;
+        }
+
+        private void pictureBox5_Click(object sender, EventArgs e)
+        {
+            Form5 form5 = new Form5();
+            form5.Show();
             this.Visible = false;
         }
     }
