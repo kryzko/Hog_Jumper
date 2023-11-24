@@ -37,7 +37,7 @@
             // pictureBox2
             // 
             this.pictureBox2.BackgroundImage = global::Hog_Jumper.Properties.Resources.праздник;
-            this.pictureBox2.Location = new System.Drawing.Point(549, 781);
+            this.pictureBox2.Location = new System.Drawing.Point(404, 1038);
             this.pictureBox2.Name = "pictureBox2";
             this.pictureBox2.Size = new System.Drawing.Size(339, 50);
             this.pictureBox2.TabIndex = 1;
@@ -48,7 +48,7 @@
             // pictureBox1
             // 
             this.pictureBox1.BackgroundImage = global::Hog_Jumper.Properties.Resources.праздник;
-            this.pictureBox1.Location = new System.Drawing.Point(1299, 12);
+            this.pictureBox1.Location = new System.Drawing.Point(999, 12);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(163, 50);
             this.pictureBox1.TabIndex = 0;
@@ -60,7 +60,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(12F, 25F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1474, 929);
+            this.ClientSize = new System.Drawing.Size(1174, 1129);
             this.Controls.Add(this.pictureBox2);
             this.Controls.Add(this.pictureBox1);
             this.Name = "Form6";
