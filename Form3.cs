@@ -23,5 +23,7 @@ namespace Hog_Jumper
             form1.Visible = true;
             this.Visible = false;
         }
+
+      
     }
 }
