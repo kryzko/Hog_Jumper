@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace Hog_Jumper
 {
-    public partial class Form7 : Form
+    public partial class LogIn : Form
     {
-        public Form7()
+        public LogIn()
         {
             InitializeComponent();
         }

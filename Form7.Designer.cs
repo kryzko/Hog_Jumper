@@ -1,6 +1,6 @@
 ﻿namespace Hog_Jumper
 {
-    partial class Form7
+    partial class LogIn
     {
         /// <summary>
         /// Required designer variable.
@@ -35,21 +35,23 @@
             // pictureBox2
             // 
             this.pictureBox2.BackgroundImage = global::Hog_Jumper.Properties.Resources.праздник;
-            this.pictureBox2.Location = new System.Drawing.Point(393, 1033);
+            this.pictureBox2.Location = new System.Drawing.Point(264, 608);
+            this.pictureBox2.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.pictureBox2.Name = "pictureBox2";
-            this.pictureBox2.Size = new System.Drawing.Size(339, 50);
+            this.pictureBox2.Size = new System.Drawing.Size(226, 32);
             this.pictureBox2.TabIndex = 2;
             this.pictureBox2.TabStop = false;
             this.pictureBox2.Tag = "к авторизации";
             this.pictureBox2.Click += new System.EventHandler(this.pictureBox2_Click);
             // 
-            // Form7
+            // LogIn
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(12F, 25F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1174, 1129);
+            this.ClientSize = new System.Drawing.Size(783, 675);
             this.Controls.Add(this.pictureBox2);
-            this.Name = "Form7";
+            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.Name = "LogIn";
             this.Text = "Form7";
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             this.ResumeLayout(false);

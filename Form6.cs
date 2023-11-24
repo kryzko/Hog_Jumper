@@ -19,7 +19,7 @@ namespace Hog_Jumper
 
         private void pictureBox2_Click(object sender, EventArgs e)
         {
-            Form7 form7 = new Form7();
+            LogIn form7 = new LogIn();
             form7.Visible = true;
             this.Visible = false;
         }
