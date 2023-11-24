@@ -44,9 +44,10 @@
             // 
             this.pictureBox1.BackgroundImage = global::Hog_Jumper.Properties.Resources.праздник;
             this.pictureBox1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
-            this.pictureBox1.Location = new System.Drawing.Point(194, 746);
+            this.pictureBox1.Location = new System.Drawing.Point(129, 477);
+            this.pictureBox1.Margin = new System.Windows.Forms.Padding(2);
             this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(352, 76);
+            this.pictureBox1.Size = new System.Drawing.Size(235, 49);
             this.pictureBox1.TabIndex = 0;
             this.pictureBox1.TabStop = false;
             this.pictureBox1.Tag = "выйти";
@@ -56,9 +57,10 @@
             // 
             this.pictureBox2.BackgroundImage = global::Hog_Jumper.Properties.Resources.праздник;
             this.pictureBox2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
-            this.pictureBox2.Location = new System.Drawing.Point(194, 632);
+            this.pictureBox2.Location = new System.Drawing.Point(129, 404);
+            this.pictureBox2.Margin = new System.Windows.Forms.Padding(2);
             this.pictureBox2.Name = "pictureBox2";
-            this.pictureBox2.Size = new System.Drawing.Size(352, 76);
+            this.pictureBox2.Size = new System.Drawing.Size(235, 49);
             this.pictureBox2.TabIndex = 1;
             this.pictureBox2.TabStop = false;
             this.pictureBox2.Tag = "рекорды";
@@ -68,9 +70,10 @@
             // 
             this.pictureBox3.BackgroundImage = global::Hog_Jumper.Properties.Resources.праздник;
             this.pictureBox3.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
-            this.pictureBox3.Location = new System.Drawing.Point(194, 519);
+            this.pictureBox3.Location = new System.Drawing.Point(129, 332);
+            this.pictureBox3.Margin = new System.Windows.Forms.Padding(2);
             this.pictureBox3.Name = "pictureBox3";
-            this.pictureBox3.Size = new System.Drawing.Size(352, 76);
+            this.pictureBox3.Size = new System.Drawing.Size(235, 49);
             this.pictureBox3.TabIndex = 2;
             this.pictureBox3.TabStop = false;
             this.pictureBox3.Tag = "скины";
@@ -78,11 +81,12 @@
             // 
             // pictureBox4
             // 
-            this.pictureBox4.BackgroundImage = global::Hog_Jumper.Properties.Resources.праздник;
+            this.pictureBox4.BackgroundImage = global::Hog_Jumper.Properties.Resources.settings;
             this.pictureBox4.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
-            this.pictureBox4.Location = new System.Drawing.Point(194, 401);
+            this.pictureBox4.Location = new System.Drawing.Point(129, 255);
+            this.pictureBox4.Margin = new System.Windows.Forms.Padding(2);
             this.pictureBox4.Name = "pictureBox4";
-            this.pictureBox4.Size = new System.Drawing.Size(352, 76);
+            this.pictureBox4.Size = new System.Drawing.Size(235, 51);
             this.pictureBox4.TabIndex = 3;
             this.pictureBox4.TabStop = false;
             this.pictureBox4.Tag = "настройки";
@@ -92,9 +96,10 @@
             // 
             this.pictureBox5.BackgroundImage = global::Hog_Jumper.Properties.Resources.праздник;
             this.pictureBox5.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
-            this.pictureBox5.Location = new System.Drawing.Point(194, 285);
+            this.pictureBox5.Location = new System.Drawing.Point(129, 182);
+            this.pictureBox5.Margin = new System.Windows.Forms.Padding(2);
             this.pictureBox5.Name = "pictureBox5";
-            this.pictureBox5.Size = new System.Drawing.Size(796, 76);
+            this.pictureBox5.Size = new System.Drawing.Size(531, 49);
             this.pictureBox5.TabIndex = 4;
             this.pictureBox5.TabStop = false;
             this.pictureBox5.Tag = "играть";
@@ -102,17 +107,16 @@
             // 
             // Form1
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(12F, 25F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
             this.BackgroundImage = global::Hog_Jumper.Properties.Resources.Png;
-            this.ClientSize = new System.Drawing.Size(1474, 929);
+            this.ClientSize = new System.Drawing.Size(983, 595);
             this.Controls.Add(this.pictureBox5);
             this.Controls.Add(this.pictureBox4);
             this.Controls.Add(this.pictureBox3);
             this.Controls.Add(this.pictureBox2);
             this.Controls.Add(this.pictureBox1);
-            this.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.Name = "Form1";
             this.Text = "Form1";
             this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
