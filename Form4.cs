@@ -23,6 +23,7 @@ namespace Hog_Jumper
         private void pictureBox1_Click(object sender, EventArgs e)
         {
             Form1 form1 = new Form1();
+            form1.timer1.Enabled = false;
             form1.Visible = true;
             this.Visible = false;
         }
@@ -52,16 +53,6 @@ namespace Hog_Jumper
 
         }
 
-        private void trackBar1_ValueChanged(object sender, EventArgs e)
-        {
-            //string projectDirectory = Directory.GetParent(Directory.GetCurrentDirectory()).Parent.FullName;
-            //string propertiesPath = Path.Combine(projectDirectory, "Resources");
-
-            //SoundPlayer Player = new SoundPlayer();
-            //Player.SoundLocation = Path.Combine(propertiesPath, "7.wav");
-
-            //в интернете ничего по этому поводу нет, сама я тоже не нашла как можно сделать
-            //изменение громкости. пока оставлю так, может все таки найду
-        }
+        
     }
 }
