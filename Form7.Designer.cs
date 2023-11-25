@@ -36,7 +36,7 @@
             // 
             this.pictureBox2.BackgroundImage = global::Hog_Jumper.Properties.Resources.праздник;
             this.pictureBox2.Location = new System.Drawing.Point(264, 608);
-            this.pictureBox2.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.pictureBox2.Margin = new System.Windows.Forms.Padding(2);
             this.pictureBox2.Name = "pictureBox2";
             this.pictureBox2.Size = new System.Drawing.Size(226, 32);
             this.pictureBox2.TabIndex = 2;
@@ -50,9 +50,9 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(783, 675);
             this.Controls.Add(this.pictureBox2);
-            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.Margin = new System.Windows.Forms.Padding(2);
             this.Name = "LogIn";
-            this.Text = "Form7";
+            this.Text = "LogIn";
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             this.ResumeLayout(false);
 
