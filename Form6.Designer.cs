@@ -43,7 +43,7 @@
             // 
             this.pictureBox2.BackgroundImage = global::Hog_Jumper.Properties.Resources.праздник;
             this.pictureBox2.Location = new System.Drawing.Point(546, 619);
-            this.pictureBox2.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.pictureBox2.Margin = new System.Windows.Forms.Padding(2);
             this.pictureBox2.Name = "pictureBox2";
             this.pictureBox2.Size = new System.Drawing.Size(226, 32);
             this.pictureBox2.TabIndex = 1;
@@ -55,7 +55,7 @@
             // 
             this.pictureBox1.BackgroundImage = global::Hog_Jumper.Properties.Resources.праздник;
             this.pictureBox1.Location = new System.Drawing.Point(663, 11);
-            this.pictureBox1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.pictureBox1.Margin = new System.Windows.Forms.Padding(2);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(109, 32);
             this.pictureBox1.TabIndex = 0;
@@ -66,7 +66,7 @@
             // pictureBox3
             // 
             this.pictureBox3.BackColor = System.Drawing.SystemColors.AppWorkspace;
-            this.pictureBox3.Location = new System.Drawing.Point(262, 415);
+            this.pictureBox3.Location = new System.Drawing.Point(306, 415);
             this.pictureBox3.Name = "pictureBox3";
             this.pictureBox3.Size = new System.Drawing.Size(166, 59);
             this.pictureBox3.TabIndex = 2;
@@ -76,7 +76,7 @@
             // 
             // richTextBox1
             // 
-            this.richTextBox1.Location = new System.Drawing.Point(223, 193);
+            this.richTextBox1.Location = new System.Drawing.Point(267, 193);
             this.richTextBox1.Name = "richTextBox1";
             this.richTextBox1.Size = new System.Drawing.Size(254, 44);
             this.richTextBox1.TabIndex = 3;
@@ -85,7 +85,7 @@
             // 
             // richTextBox2
             // 
-            this.richTextBox2.Location = new System.Drawing.Point(223, 264);
+            this.richTextBox2.Location = new System.Drawing.Point(267, 264);
             this.richTextBox2.Name = "richTextBox2";
             this.richTextBox2.Size = new System.Drawing.Size(254, 44);
             this.richTextBox2.TabIndex = 4;
@@ -94,7 +94,7 @@
             // 
             // richTextBox3
             // 
-            this.richTextBox3.Location = new System.Drawing.Point(223, 330);
+            this.richTextBox3.Location = new System.Drawing.Point(267, 330);
             this.richTextBox3.Name = "richTextBox3";
             this.richTextBox3.Size = new System.Drawing.Size(254, 44);
             this.richTextBox3.TabIndex = 5;
@@ -112,7 +112,7 @@
             this.Controls.Add(this.pictureBox3);
             this.Controls.Add(this.pictureBox2);
             this.Controls.Add(this.pictureBox1);
-            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.Margin = new System.Windows.Forms.Padding(2);
             this.Name = "Form6";
             this.Text = "SigUp";
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
