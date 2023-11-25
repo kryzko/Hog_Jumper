@@ -12,6 +12,7 @@ namespace Hog_Jumper
 {
     public partial class Form4 : Form
     {
+        bool isOn = true;
         public Form4()
         {
             InitializeComponent();
@@ -22,6 +23,12 @@ namespace Hog_Jumper
             Form1 form1 = new Form1();
             form1.Visible = true;
             this.Visible = false;
+        }
+
+        private void pictureBox2_Click(object sender, EventArgs e)
+        {
+            //if (isOn)
+
         }
     }
 }
