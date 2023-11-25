@@ -15,9 +15,15 @@ namespace Hog_Jumper
 {
     public partial class Form1 : Form
     {
+
         public Form1()
         {
             InitializeComponent();
+            string projectDirectory = Directory.GetParent(Directory.GetCurrentDirectory()).Parent.FullName;
+            string propertiesPath = Path.Combine(projectDirectory, "Resources");
+            SoundPlayer Player = new SoundPlayer();
+            Player.SoundLocation = Path.Combine(propertiesPath, "7.wav");
+            Player.PlayLooping();
         }
 
         private void pictureBox1_Click(object sender, EventArgs e)
