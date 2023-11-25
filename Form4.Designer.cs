@@ -64,17 +64,7 @@
             this.pictureBox2.TabStop = false;
             this.pictureBox2.Tag = "включить звук";
             this.pictureBox2.Click += new System.EventHandler(this.pictureBox2_Click);
-            // 
-            // trackBar1
-            // 
-            this.trackBar1.Location = new System.Drawing.Point(237, 293);
-            this.trackBar1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
-            this.trackBar1.Maximum = 100;
-            this.trackBar1.Name = "trackBar1";
-            this.trackBar1.Size = new System.Drawing.Size(309, 56);
-            this.trackBar1.TabIndex = 4;
-            this.trackBar1.Value = 50;
-            this.trackBar1.ValueChanged += new System.EventHandler(this.trackBar1_ValueChanged);
+       
             // 
             // pictureBox3
             // 
