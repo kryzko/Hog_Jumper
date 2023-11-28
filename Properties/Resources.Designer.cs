@@ -63,6 +63,26 @@ namespace Hog_Jumper.Properties {
         /// <summary>
         ///   Поиск локализованного ресурса типа System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap authorization {
+            get {
+                object obj = ResourceManager.GetObject("authorization", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Поиск локализованного ресурса типа System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap back {
+            get {
+                object obj = ResourceManager.GetObject("back", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Поиск локализованного ресурса типа System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap exit {
             get {
                 object obj = ResourceManager.GetObject("exit", resourceCulture);
@@ -96,6 +116,16 @@ namespace Hog_Jumper.Properties {
         internal static System.Drawing.Bitmap records {
             get {
                 object obj = ResourceManager.GetObject("records", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Поиск локализованного ресурса типа System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap registration {
+            get {
+                object obj = ResourceManager.GetObject("registration", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

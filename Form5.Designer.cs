@@ -34,10 +34,13 @@
             // 
             // pictureBox1
             // 
-            this.pictureBox1.BackgroundImage = global::Hog_Jumper.Properties.Resources.праздник;
-            this.pictureBox1.Location = new System.Drawing.Point(955, 12);
+            this.pictureBox1.BackColor = System.Drawing.Color.Transparent;
+            this.pictureBox1.Image = global::Hog_Jumper.Properties.Resources.back;
+            this.pictureBox1.Location = new System.Drawing.Point(669, 11);
+            this.pictureBox1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(207, 50);
+            this.pictureBox1.Size = new System.Drawing.Size(88, 62);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBox1.TabIndex = 2;
             this.pictureBox1.TabStop = false;
             this.pictureBox1.Tag = "в главное меню";
@@ -45,10 +48,11 @@
             // 
             // Form5
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(12F, 25F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1174, 1129);
+            this.ClientSize = new System.Drawing.Size(783, 675);
             this.Controls.Add(this.pictureBox1);
+            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.Name = "Form5";
             this.Text = "Game";
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();

@@ -34,11 +34,13 @@
             // 
             // pictureBox2
             // 
-            this.pictureBox2.BackgroundImage = global::Hog_Jumper.Properties.Resources.праздник;
-            this.pictureBox2.Location = new System.Drawing.Point(264, 608);
+            this.pictureBox2.BackColor = System.Drawing.Color.Transparent;
+            this.pictureBox2.Image = global::Hog_Jumper.Properties.Resources.authorization;
+            this.pictureBox2.Location = new System.Drawing.Point(274, 397);
             this.pictureBox2.Margin = new System.Windows.Forms.Padding(2);
             this.pictureBox2.Name = "pictureBox2";
-            this.pictureBox2.Size = new System.Drawing.Size(226, 32);
+            this.pictureBox2.Size = new System.Drawing.Size(249, 92);
+            this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBox2.TabIndex = 2;
             this.pictureBox2.TabStop = false;
             this.pictureBox2.Tag = "к авторизации";
