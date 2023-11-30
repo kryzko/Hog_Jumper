@@ -169,6 +169,7 @@
     <None Include="Resources\registration.png" />
     <None Include="Resources\authorization.png" />
     <None Include="Resources\cross_exit1.png" />
+    <None Include="Resources\backgroundMainMenu1.png" />
     <Content Include="Resources\Sound_34393800 1636125459.mp3" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
