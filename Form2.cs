@@ -35,5 +35,13 @@ namespace Hog_Jumper
             form1.Visible = true;
             this.Visible = false;
         }
+
+        private void pictureBox2_Click(object sender, EventArgs e)
+        {
+            Form1 form1 = new Form1();
+            form1.timer1.Enabled = false;
+            form1.Visible = true;
+            this.Visible = false;
+        }
     }
 }
