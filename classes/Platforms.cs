@@ -15,9 +15,9 @@ namespace Hog_Jumper.classes
         public int sizeY;
         public bool isTouchedByPlayer;
 
-        public Platform(PointF)
-        {
-            sprite 
-        }
+        //public Platform(PointF)
+        //{
+        //    //sprite; 
+        //}
     }
 }
