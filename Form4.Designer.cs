@@ -44,9 +44,10 @@
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 16.125F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.label1.Location = new System.Drawing.Point(455, 654);
+            this.label1.Location = new System.Drawing.Point(437, 509);
+            this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(170, 31);
+            this.label1.Size = new System.Drawing.Size(273, 51);
             this.label1.TabIndex = 7;
             this.label1.Text = "Смена темы";
             // 
@@ -54,18 +55,18 @@
             // 
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 16.125F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.label2.Location = new System.Drawing.Point(344, 73);
-            this.label2.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label2.Location = new System.Drawing.Point(516, 114);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(73, 31);
+            this.label2.Size = new System.Drawing.Size(116, 51);
             this.label2.TabIndex = 8;
             this.label2.Text = "Звук";
             // 
             // pictureBox4
             // 
-            this.pictureBox4.Location = new System.Drawing.Point(680, 744);
+            this.pictureBox4.Location = new System.Drawing.Point(713, 609);
+            this.pictureBox4.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.pictureBox4.Name = "pictureBox4";
-            this.pictureBox4.Size = new System.Drawing.Size(154, 136);
+            this.pictureBox4.Size = new System.Drawing.Size(231, 212);
             this.pictureBox4.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBox4.TabIndex = 6;
             this.pictureBox4.TabStop = false;
@@ -73,9 +74,10 @@
             // 
             // pictureBox3
             // 
-            this.pictureBox3.Location = new System.Drawing.Point(282, 744);
+            this.pictureBox3.Location = new System.Drawing.Point(209, 609);
+            this.pictureBox3.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.pictureBox3.Name = "pictureBox3";
-            this.pictureBox3.Size = new System.Drawing.Size(154, 136);
+            this.pictureBox3.Size = new System.Drawing.Size(231, 212);
             this.pictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBox3.TabIndex = 5;
             this.pictureBox3.TabStop = false;
@@ -84,10 +86,9 @@
             // pictureBox2
             // 
             this.pictureBox2.Image = global::Hog_Jumper.Properties.Resources.праздник;
-            this.pictureBox2.Location = new System.Drawing.Point(309, 120);
-            this.pictureBox2.Margin = new System.Windows.Forms.Padding(2);
+            this.pictureBox2.Location = new System.Drawing.Point(464, 188);
             this.pictureBox2.Name = "pictureBox2";
-            this.pictureBox2.Size = new System.Drawing.Size(154, 136);
+            this.pictureBox2.Size = new System.Drawing.Size(231, 212);
             this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBox2.TabIndex = 2;
             this.pictureBox2.TabStop = false;
@@ -98,10 +99,9 @@
             // 
             this.pictureBox1.BackColor = System.Drawing.Color.Transparent;
             this.pictureBox1.Image = global::Hog_Jumper.Properties.Resources.back;
-            this.pictureBox1.Location = new System.Drawing.Point(669, 11);
-            this.pictureBox1.Margin = new System.Windows.Forms.Padding(2);
+            this.pictureBox1.Location = new System.Drawing.Point(1004, 17);
             this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(88, 62);
+            this.pictureBox1.Size = new System.Drawing.Size(132, 97);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBox1.TabIndex = 1;
             this.pictureBox1.TabStop = false;
@@ -110,16 +110,15 @@
             // 
             // Form4
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(12F, 25F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(783, 675);
+            this.ClientSize = new System.Drawing.Size(1174, 1055);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.pictureBox4);
             this.Controls.Add(this.pictureBox3);
             this.Controls.Add(this.pictureBox2);
             this.Controls.Add(this.pictureBox1);
-            this.Margin = new System.Windows.Forms.Padding(2);
             this.Name = "Form4";
             this.Text = "Settings";
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).EndInit();

@@ -49,7 +49,7 @@
             // 
             this.pictureBox2.BackColor = System.Drawing.Color.Transparent;
             this.pictureBox2.Image = global::Hog_Jumper.Properties.Resources.back;
-            this.pictureBox2.Location = new System.Drawing.Point(1030, 12);
+            this.pictureBox2.Location = new System.Drawing.Point(1004, 17);
             this.pictureBox2.Name = "pictureBox2";
             this.pictureBox2.Size = new System.Drawing.Size(132, 97);
             this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -63,7 +63,7 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(12F, 25F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.ClientSize = new System.Drawing.Size(1174, 1129);
+            this.ClientSize = new System.Drawing.Size(1174, 1055);
             this.Controls.Add(this.pictureBox2);
             this.Controls.Add(this.pictureBox1);
             this.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
