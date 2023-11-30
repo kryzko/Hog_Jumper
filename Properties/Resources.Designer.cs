@@ -83,6 +83,16 @@ namespace Hog_Jumper.Properties {
         /// <summary>
         ///   Поиск локализованного ресурса типа System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap cross_exit {
+            get {
+                object obj = ResourceManager.GetObject("cross_exit", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Поиск локализованного ресурса типа System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap exit {
             get {
                 object obj = ResourceManager.GetObject("exit", resourceCulture);
@@ -146,6 +156,26 @@ namespace Hog_Jumper.Properties {
         internal static System.Drawing.Bitmap skins {
             get {
                 object obj = ResourceManager.GetObject("skins", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Поиск локализованного ресурса типа System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap sound_no {
+            get {
+                object obj = ResourceManager.GetObject("sound_no", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Поиск локализованного ресурса типа System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap sound_yes {
+            get {
+                object obj = ResourceManager.GetObject("sound_yes", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
