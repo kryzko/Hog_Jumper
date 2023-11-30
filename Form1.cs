@@ -32,6 +32,7 @@ namespace Hog_Jumper
         {
             Form2 form2 = new Form2();
             form2.Show();
+            form2.Size = this.Size;
             this.Visible = false;
         }
 
@@ -39,6 +40,7 @@ namespace Hog_Jumper
         {
             Form3 form3 = new Form3();
             form3.Show();
+            form3.Size = this.Size;
             this.Visible = false;
         }
 
@@ -46,6 +48,7 @@ namespace Hog_Jumper
         {
             Form4 form4 = new Form4();
             form4.Show();
+            form4.Size = this.Size;
             this.Visible = false;
         }
 
@@ -53,6 +56,7 @@ namespace Hog_Jumper
         {
             Form5 form5 = new Form5();
             form5.Show();
+            form5.Size = this.Size;
             this.Visible = false;
         }
 
