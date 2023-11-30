@@ -63,7 +63,6 @@
             // 
             // pictureBox4
             // 
-            this.pictureBox4.Image = global::Hog_Jumper.Properties.Resources.dark_theme;
             this.pictureBox4.Location = new System.Drawing.Point(713, 609);
             this.pictureBox4.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.pictureBox4.Name = "pictureBox4";
@@ -75,8 +74,6 @@
             // 
             // pictureBox3
             // 
-            this.pictureBox3.Cursor = System.Windows.Forms.Cursors.Default;
-            this.pictureBox3.Image = global::Hog_Jumper.Properties.Resources.light_theme;
             this.pictureBox3.Location = new System.Drawing.Point(209, 609);
             this.pictureBox3.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.pictureBox3.Name = "pictureBox3";
