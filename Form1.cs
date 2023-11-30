@@ -18,7 +18,8 @@ namespace Hog_Jumper
         
         public Form1()
         {
-            InitializeComponent();            
+            InitializeComponent();   
+            this.StartPosition = FormStartPosition.CenterScreen;
 
         }
 

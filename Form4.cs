@@ -18,6 +18,7 @@ namespace Hog_Jumper
         public Form4()
         {
             InitializeComponent();
+            this.StartPosition = FormStartPosition.CenterScreen;
         }
 
         private void pictureBox1_Click(object sender, EventArgs e)
