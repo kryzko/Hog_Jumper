@@ -15,9 +15,21 @@ namespace Hog_Jumper.classes
         public int sizeY;
         public bool isTouchedByPlayer;
 
-        //public Platform(PointF)
-        //{
-        //    //sprite; 
-        //}
+        public Platforms(PointF pos)
+        {
+            //sprite = Properties.Resources.platform;//свой скин платформы
+            sizeX = 60;
+            sizeY = 12;
+            transform = new Transform(pos, new Size(sizeX, sizeY));
+            isTouchedByPlayer = false;
+        }
+
+        public void DrawSprite(Graphics g)
+        {
+            g.DrawImage(sprite, transform.position.X, transform.position.Y, transform.size.Width, transform.size.Height);
+        }
     }
+    
 }
+
+

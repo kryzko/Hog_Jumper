@@ -51,7 +51,10 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="classes\Physics.cs" />
+    <Compile Include="classes\PlatformController.cs" />
     <Compile Include="classes\Platforms.cs" />
+    <Compile Include="classes\Player.cs" />
     <Compile Include="classes\Transform.cs" />
     <Compile Include="Form1.cs">
       <SubType>Form</SubType>
