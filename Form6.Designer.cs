@@ -62,7 +62,7 @@
             // richTextBox3
             // 
             this.richTextBox3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(210)))), ((int)(((byte)(193)))));
-            this.richTextBox3.Location = new System.Drawing.Point(211, 339);
+            this.richTextBox3.Location = new System.Drawing.Point(267, 340);
             this.richTextBox3.Name = "richTextBox3";
             this.richTextBox3.Size = new System.Drawing.Size(259, 43);
             this.richTextBox3.TabIndex = 5;
@@ -111,8 +111,8 @@
             // pictureBox4
             // 
             this.pictureBox4.BackColor = System.Drawing.Color.Transparent;
-            this.pictureBox4.Image = global::Hog_Jumper.Properties.Resources.registration;
-            this.pictureBox4.Location = new System.Drawing.Point(191, 314);
+            this.pictureBox4.Image = global::Hog_Jumper.Properties.Resources.border;
+            this.pictureBox4.Location = new System.Drawing.Point(248, 318);
             this.pictureBox4.Name = "pictureBox4";
             this.pictureBox4.Size = new System.Drawing.Size(296, 89);
             this.pictureBox4.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
