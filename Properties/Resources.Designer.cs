@@ -93,16 +93,6 @@ namespace Hog_Jumper.Properties {
         /// <summary>
         ///   Поиск локализованного ресурса типа System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap border {
-            get {
-                object obj = ResourceManager.GetObject("border", resourceCulture);
-                return ((System.Drawing.Bitmap)(obj));
-            }
-        }
-        
-        /// <summary>
-        ///   Поиск локализованного ресурса типа System.Drawing.Bitmap.
-        /// </summary>
         internal static System.Drawing.Bitmap cross_exit {
             get {
                 object obj = ResourceManager.GetObject("cross_exit", resourceCulture);
