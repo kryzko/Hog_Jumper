@@ -6,6 +6,7 @@ using System.Data;
 using System.Data.OleDb;
 using System.Drawing;
 using System.Linq;
+using System.Reflection.Emit;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
@@ -28,10 +29,43 @@ namespace Hog_Jumper
         {
             Application.Exit();
         }
-
+        public bool passwordValidationCheck(string password)
+        {
+            int chisla = 0;
+            int litters = 0;
+            int kolSymbols = 0;
+            foreach (char c in password)
+            {
+                if (char.IsNumber(c))
+                {
+                    chisla++;
+                }
+                if (char.IsLetter(c))
+                {
+                    litters++;
+                }
+                kolSymbols++;
+            }
+            if (chisla == 0) {  MessageBox.Show("в пароле должны быть цифры"); return false; }
+            if (litters == 0) { MessageBox.Show("в пароле должны быть буквы"); return false;  }
+            if (kolSymbols < 6) { MessageBox.Show("не меньше 5 символов"); return false;  }
+            else return true;
+        }
         private void pictureBox3_Click(object sender, EventArgs e)
         {
-            controller.Add(textBox1.Text,textBox2.Text);
+            if(controller.SearchReapeat(textBox1.Text))
+            {
+                if(textBox2.Text != "" &&  textBox3.Text != "" && textBox1.Text != "")
+                {
+                    if(textBox2.Text == textBox3.Text)
+                    {
+                        if(passwordValidationCheck(textBox2.Text))controller.Add(textBox1.Text, textBox2.Text);
+                    }
+                    else { MessageBox.Show("Пароли не совпадают"); }
+                }
+                else { MessageBox.Show("Поля пустые"); }
+            }
+            else { MessageBox.Show("Такой логин сущесвует"); }
         }
 
         private void Form6_FormClosing(object sender, FormClosingEventArgs e)
