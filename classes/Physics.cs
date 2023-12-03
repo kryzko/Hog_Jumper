@@ -18,8 +18,8 @@ namespace Hog_Jumper.classes
         public Physics(PointF position, Size size)
         {
             transform = new Transform(position, size);
-            gravity = 0;
-            a = 0.4f;
+            gravity = 5;
+            a = 1f;
             dx = 0;
         }
 
@@ -38,6 +38,8 @@ namespace Hog_Jumper.classes
             {
                 transform.position.Y += gravity;
                 gravity += a;
+
+                Collide();
             }
         }
 
@@ -57,6 +59,8 @@ namespace Hog_Jumper.classes
                             {
                                 PlatformController.score += 20;
                                 PlatformController.GenerateRandomPlatform();
+                                PlatformController.GenerateRandomPlatform();
+                                PlatformController.GenerateRandomPlatform();
                                 platform.isTouchedByPlayer = true;
                             }
                         }
@@ -67,7 +71,7 @@ namespace Hog_Jumper.classes
 
         public void AddForce()
         {
-            gravity -= 10;
+            gravity -= 25;
         }
     }
 }

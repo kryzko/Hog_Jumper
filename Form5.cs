@@ -15,6 +15,7 @@ namespace Hog_Jumper
     {
         Player player;
         Timer timer1;
+        Timer secondTimer;
 
         public void Init()
         {
@@ -36,10 +37,10 @@ namespace Hog_Jumper
             switch (e.KeyCode.ToString())
             {
                 case "Right":
-                    player.physics.dx = 6;
+                    player.physics.dx = 8;
                     break;
                 case "Left":
-                    player.physics.dx = -6;
+                    player.physics.dx = -8;
                     break;
                     
             }
@@ -48,13 +49,17 @@ namespace Hog_Jumper
         private void Update(object sender, EventArgs e)
         {
             this.Text = "Hog Jump: score - " + PlatformController.score;
+            int score = PlatformController.score;
 
             if (player.physics.transform.position.Y >= PlatformController.platforms[0].transform.position.Y + 200)
+            {
                 Init();
+                MessageBox.Show("Игра окончена, ваш счет: " + score);
+            }
+            
 
             player.physics.ApplyPhysics();
             FollowPlayer();
-
             Invalidate();
         }
 
