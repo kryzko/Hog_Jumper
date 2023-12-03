@@ -1,7 +1,9 @@
-﻿using System;
+﻿using Hog_Jumper.DBFolder;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
+using System.Data.OleDb;
 using System.Drawing;
 using System.Linq;
 using System.Text;
@@ -12,9 +14,12 @@ namespace Hog_Jumper
 {
     public partial class Form6 : Form
     {
+        Query controller;
         public Form6()
         {
             InitializeComponent();
+            controller = new Query(ConnectionString.ConnectStr);
+
         }
 
         private void pictureBox2_Click(object sender, EventArgs e)
@@ -31,7 +36,7 @@ namespace Hog_Jumper
 
         private void pictureBox3_Click(object sender, EventArgs e)
         {
-
+            controller.Add(textBox1.Text,textBox2.Text);
         }
 
         private void Form6_FormClosing(object sender, FormClosingEventArgs e)
