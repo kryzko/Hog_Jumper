@@ -20,7 +20,7 @@ namespace Hog_Jumper
         {
             PlatformController.platforms = new System.Collections.Generic.List<Platforms>();
             PlatformController.AddPlatform(new System.Drawing.PointF(100, 400));
-            PlatformController.startPlatformPosY = 400; // переделать
+            PlatformController.startPlatformPosY = 400; // подогнать размеры
             PlatformController.score = 0;
             PlatformController.GenerateStartSequance();
             player = new Player();

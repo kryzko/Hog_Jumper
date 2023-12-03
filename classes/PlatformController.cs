@@ -10,13 +10,13 @@ namespace Hog_Jumper.classes
     internal class PlatformController
     {
         public static List<Platforms> platforms;
-        public static int startPlatformPosY = 400;//подогнать
+        public static int startPlatformPosY = 400; //подогнать
         public static int score = 0;
 
         public static void AddPlatform(PointF position)
         {
             Platforms platform = new Platforms(position);
-           // platform.Add(platform); хз поч не работает
+            platforms.Add(platform);
         }
 
         public static void GenerateStartSequance()

@@ -17,7 +17,7 @@ namespace Hog_Jumper.classes
 
         public Platforms(PointF pos)
         {
-            //sprite = Properties.Resources.platform;//свой скин платформы
+            sprite = Properties.Resources.border_color; //свой скин платформы добавить
             sizeX = 60;
             sizeY = 12;
             transform = new Transform(pos, new Size(sizeX, sizeY));
