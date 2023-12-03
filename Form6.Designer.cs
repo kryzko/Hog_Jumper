@@ -30,7 +30,6 @@
         {
             this.richTextBox1 = new System.Windows.Forms.RichTextBox();
             this.richTextBox2 = new System.Windows.Forms.RichTextBox();
-            this.richTextBox3 = new System.Windows.Forms.RichTextBox();
             this.pictureBox3 = new System.Windows.Forms.PictureBox();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
@@ -58,16 +57,6 @@
             this.richTextBox2.TabIndex = 4;
             this.richTextBox2.Tag = "пароль";
             this.richTextBox2.Text = "";
-            // 
-            // richTextBox3
-            // 
-            this.richTextBox3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(210)))), ((int)(((byte)(193)))));
-            this.richTextBox3.Location = new System.Drawing.Point(267, 340);
-            this.richTextBox3.Name = "richTextBox3";
-            this.richTextBox3.Size = new System.Drawing.Size(259, 43);
-            this.richTextBox3.TabIndex = 5;
-            this.richTextBox3.Tag = "повторение пароля";
-            this.richTextBox3.Text = "";
             // 
             // pictureBox3
             // 
@@ -127,7 +116,6 @@
             this.BackgroundImage = global::Hog_Jumper.Properties.Resources.backgroundMainMenu1;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(783, 675);
-            this.Controls.Add(this.richTextBox3);
             this.Controls.Add(this.richTextBox2);
             this.Controls.Add(this.richTextBox1);
             this.Controls.Add(this.pictureBox3);
@@ -153,7 +141,6 @@
         private System.Windows.Forms.PictureBox pictureBox3;
         private System.Windows.Forms.RichTextBox richTextBox1;
         private System.Windows.Forms.RichTextBox richTextBox2;
-        private System.Windows.Forms.RichTextBox richTextBox3;
         private System.Windows.Forms.PictureBox pictureBox4;
     }
 }
