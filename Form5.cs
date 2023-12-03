@@ -92,7 +92,7 @@ namespace Hog_Jumper
             timer1.Start();
             this.KeyDown += new KeyEventHandler(OnKeyboardPressed);
             this.KeyUp += new KeyEventHandler(OnKeyboardUp);
-            this.BackgroundImage = Properties.Resources.backgroundMainMenu1; // изменить на норм фон
+            //this.BackgroundImage = Properties.Resources.backgroundMainMenu1; // изменить на норм фон
             this.Height = 600;
             this.Width = 330;
             this.Paint += new PaintEventHandler(OnRepaint);
