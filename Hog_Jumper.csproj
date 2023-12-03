@@ -199,6 +199,7 @@
     <None Include="Resources\Png.png" />
   </ItemGroup>
   <ItemGroup>
+    <None Include="Resources\глаз.png" />
     <None Include="Resources\sound_yes1.png" />
     <None Include="Resources\sound_no1.png" />
     <None Include="Resources\7.wav" />
