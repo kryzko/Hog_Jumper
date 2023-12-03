@@ -124,9 +124,6 @@
   <data name="skins" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\skins.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="sound_yes" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\sound_yes1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
   <data name="light_theme" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\light_theme.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
@@ -166,25 +163,22 @@
   <data name="border_color" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\border_color.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="Hog1_standing" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Hog1_standing.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
   <data name="authorization" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\authorization.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="background" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\background.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="глаз" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\глаз.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="sound_yes" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\sound_yes1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="backgroundMainMenu1" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\backgroundMainMenu1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="Hog1_standing" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Hog1_standing.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="background" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\background.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="platform_cl" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\platform_cl.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="глаз1" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\глаз.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
 </root>

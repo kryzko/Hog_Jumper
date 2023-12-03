@@ -19,13 +19,14 @@ namespace Hog_Jumper
         {
             InitializeComponent();
             controller = new Query(ConnectionString.ConnectStr);
-            textBox2.UseSystemPasswordChar = true;
-            textBox3.UseSystemPasswordChar = true;
+
         }
 
         private void pictureBox2_Click(object sender, EventArgs e)
         {
-            
+            LogIn form7 = new LogIn();
+            form7.Visible = true;
+            this.Visible = false;
         }
 
         private void pictureBox1_Click(object sender, EventArgs e)
@@ -41,13 +42,6 @@ namespace Hog_Jumper
         private void Form6_FormClosing(object sender, FormClosingEventArgs e)
         {
             Application.Exit();
-        }
-
-        private void pictureBox2_Click_1(object sender, EventArgs e)
-        {
-            LogIn form7 = new LogIn();
-            form7.Visible = true;
-            this.Visible = false;
         }
     }
 }
