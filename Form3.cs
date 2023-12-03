@@ -26,6 +26,9 @@ namespace Hog_Jumper
             this.Visible = false;
         }
 
-      
+        private void Form3_FormClosing(object sender, FormClosingEventArgs e)
+        {
+            Application.Exit();
+        }
     }
 }

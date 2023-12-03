@@ -54,6 +54,9 @@ namespace Hog_Jumper
 
         }
 
-        
+        private void Form4_FormClosing(object sender, FormClosingEventArgs e)
+        {
+            Application.Exit();
+        }
     }
 }
