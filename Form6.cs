@@ -59,7 +59,14 @@ namespace Hog_Jumper
                 {
                     if(textBox2.Text == textBox3.Text)
                     {
-                        if(passwordValidationCheck(textBox2.Text))controller.Add(textBox1.Text, textBox2.Text);
+                        if(passwordValidationCheck(textBox2.Text))
+                        {
+                            controller.Add(textBox1.Text, textBox2.Text);
+                            Form1 form1 = new Form1();
+                            form1.Visible = true;
+                            this.Visible = false;
+                        }
+                          
                     }
                     else { MessageBox.Show("Пароли не совпадают"); }
                 }

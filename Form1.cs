@@ -64,10 +64,8 @@ namespace Hog_Jumper
 
         private void timer1_Tick(object sender, EventArgs e)
         {
-            string projectDirectory = Directory.GetParent(Directory.GetCurrentDirectory()).Parent.FullName;
-            string propertiesPath = Path.Combine(projectDirectory, "Resources");
             SoundPlayer Player = new SoundPlayer();
-            Player.SoundLocation = Path.Combine(propertiesPath, "7.wav");
+            Player.SoundLocation =  "7.wav";
             Player.PlayLooping();
             timer1.Enabled = false;
         }
