@@ -44,11 +44,13 @@ namespace Hog_Jumper
             if (clickPictureBox7 == 0)
             {
                 textBox2.UseSystemPasswordChar = false;
+                pictureBox7.Image = Image.FromFile("3.jpg");
                 clickPictureBox7 = 1;
             }
             else
             {
                 textBox2.UseSystemPasswordChar = true;
+                pictureBox7.Image = Image.FromFile("глаз.png");
                 clickPictureBox7 = 0;
             }
         }
@@ -58,11 +60,13 @@ namespace Hog_Jumper
             if (clickPictureBox8 == 0)
             {
                 textBox3.UseSystemPasswordChar = false;
+                pictureBox8.Image = Image.FromFile("3.jpg");
                 clickPictureBox8 = 1;
             }
             else
             {
                 textBox3.UseSystemPasswordChar = true;
+                pictureBox8.Image = Image.FromFile("глаз.png");
                 clickPictureBox8 = 0;
             }
         }
