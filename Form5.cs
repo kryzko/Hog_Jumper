@@ -93,8 +93,8 @@ namespace Hog_Jumper
             this.KeyDown += new KeyEventHandler(OnKeyboardPressed);
             this.KeyUp += new KeyEventHandler(OnKeyboardUp);
             this.BackgroundImage = Properties.Resources.background;
+            this.Width = 600;
             this.Height = 600;
-            this.Width = 330;
             this.Paint += new PaintEventHandler(OnRepaint);
 
         }
