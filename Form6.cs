@@ -53,7 +53,7 @@ namespace Hog_Jumper
         }
         private void pictureBox3_Click(object sender, EventArgs e)
         {
-            if(controller.SearchReapeat(textBox1.Text))
+            if(controller.SearchReapeatLogin(textBox1.Text))
             {
                 if(textBox2.Text != "" &&  textBox3.Text != "" && textBox1.Text != "")
                 {

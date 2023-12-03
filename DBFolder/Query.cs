@@ -47,14 +47,24 @@ namespace Hog_Jumper.DBFolder
             connection.Close();
 
         }
-        public bool SearchReapeat(string login)//Проверка на повторени логина
+        public bool SearchReapeatLogin(string login)//Проверка на повторени логина
         {
             connection.Open();
-            command = new OleDbCommand($"select count(*) from Users where login ='{login}'",connection);
+            command = new OleDbCommand($"select count(*) from Users where login ='{login}'", connection);
             int countRecords = Convert.ToInt32(command.ExecuteScalar());
             connection.Close();
-            if(countRecords > 0) { return false; }
+            if (countRecords > 0) { return false; }
             else { return true; }
         }
+        public bool SearchPasswordWhereLogin(string login, string password)//поиск пароля по логину
+        {
+            connection.Open();
+            command = new OleDbCommand($"select password from Users where login = '{login}' ", connection);
+            var result = command.ExecuteScalar();
+            connection.Close();
+            if (result.ToString() == password) { return true; }
+            else { return false; }
+        }
+
     }
 }
