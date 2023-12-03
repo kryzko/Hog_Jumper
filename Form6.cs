@@ -22,6 +22,7 @@ namespace Hog_Jumper
             controller = new Query(ConnectionString.ConnectStr);
             textBox2.UseSystemPasswordChar = true;
             textBox3.UseSystemPasswordChar = true;
+            this.StartPosition = FormStartPosition.CenterScreen;
 
         }
 
@@ -114,7 +115,7 @@ namespace Hog_Jumper
 
         private void pictureBox2_Click_1(object sender, EventArgs e)
         {
-            LogIn form7 = new LogIn();
+            Form7 form7 = new Form7();
             form7.Visible = true;
             this.Visible = false;
         }

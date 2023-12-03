@@ -10,8 +10,8 @@ namespace Hog_Jumper
     {
         public MyApplicationContext()
         {
-            Form6 form6 = new Form6();
-            form6.Show();
+            Form7 form7 = new Form7();
+            form7.Show();
         }
     }
     internal static class Program

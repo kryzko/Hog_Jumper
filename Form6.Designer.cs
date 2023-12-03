@@ -52,8 +52,8 @@
             // pictureBox3
             // 
             this.pictureBox3.BackColor = System.Drawing.Color.Transparent;
-            this.pictureBox3.Image = global::Hog_Jumper.Properties.Resources.registration;
-            this.pictureBox3.Location = new System.Drawing.Point(250, 403);
+            this.pictureBox3.Image = global::Hog_Jumper.Properties.Resources.authorization;
+            this.pictureBox3.Location = new System.Drawing.Point(252, 487);
             this.pictureBox3.Name = "pictureBox3";
             this.pictureBox3.Size = new System.Drawing.Size(296, 89);
             this.pictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -80,7 +80,7 @@
             // 
             this.pictureBox4.BackColor = System.Drawing.Color.Transparent;
             this.pictureBox4.Image = global::Hog_Jumper.Properties.Resources.border_color;
-            this.pictureBox4.Location = new System.Drawing.Point(250, 131);
+            this.pictureBox4.Location = new System.Drawing.Point(252, 220);
             this.pictureBox4.Name = "pictureBox4";
             this.pictureBox4.Size = new System.Drawing.Size(296, 89);
             this.pictureBox4.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -92,7 +92,7 @@
             // 
             this.pictureBox5.BackColor = System.Drawing.Color.Transparent;
             this.pictureBox5.Image = global::Hog_Jumper.Properties.Resources.border_color;
-            this.pictureBox5.Location = new System.Drawing.Point(250, 226);
+            this.pictureBox5.Location = new System.Drawing.Point(252, 310);
             this.pictureBox5.Name = "pictureBox5";
             this.pictureBox5.Size = new System.Drawing.Size(296, 89);
             this.pictureBox5.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -104,7 +104,7 @@
             // 
             this.pictureBox6.BackColor = System.Drawing.Color.Transparent;
             this.pictureBox6.Image = global::Hog_Jumper.Properties.Resources.border_color;
-            this.pictureBox6.Location = new System.Drawing.Point(250, 308);
+            this.pictureBox6.Location = new System.Drawing.Point(252, 392);
             this.pictureBox6.Name = "pictureBox6";
             this.pictureBox6.Size = new System.Drawing.Size(296, 89);
             this.pictureBox6.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -118,7 +118,7 @@
             this.textBox1.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.textBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.textBox1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(81)))), ((int)(((byte)(70)))));
-            this.textBox1.Location = new System.Drawing.Point(294, 159);
+            this.textBox1.Location = new System.Drawing.Point(296, 248);
             this.textBox1.Name = "textBox1";
             this.textBox1.Size = new System.Drawing.Size(207, 27);
             this.textBox1.TabIndex = 9;
@@ -129,7 +129,7 @@
             this.textBox2.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.textBox2.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.textBox2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(81)))), ((int)(((byte)(70)))));
-            this.textBox2.Location = new System.Drawing.Point(294, 254);
+            this.textBox2.Location = new System.Drawing.Point(296, 338);
             this.textBox2.Name = "textBox2";
             this.textBox2.Size = new System.Drawing.Size(207, 27);
             this.textBox2.TabIndex = 10;
@@ -140,7 +140,7 @@
             this.textBox3.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.textBox3.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.textBox3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(81)))), ((int)(((byte)(70)))));
-            this.textBox3.Location = new System.Drawing.Point(294, 336);
+            this.textBox3.Location = new System.Drawing.Point(296, 420);
             this.textBox3.Name = "textBox3";
             this.textBox3.Size = new System.Drawing.Size(207, 27);
             this.textBox3.TabIndex = 11;
@@ -149,7 +149,7 @@
             // 
             this.pictureBox7.BackColor = System.Drawing.Color.Transparent;
             this.pictureBox7.Image = global::Hog_Jumper.Properties.Resources.глаз;
-            this.pictureBox7.Location = new System.Drawing.Point(561, 239);
+            this.pictureBox7.Location = new System.Drawing.Point(563, 323);
             this.pictureBox7.Margin = new System.Windows.Forms.Padding(2);
             this.pictureBox7.Name = "pictureBox7";
             this.pictureBox7.Size = new System.Drawing.Size(98, 66);
@@ -163,7 +163,7 @@
             // 
             this.pictureBox8.BackColor = System.Drawing.Color.Transparent;
             this.pictureBox8.Image = global::Hog_Jumper.Properties.Resources.глаз;
-            this.pictureBox8.Location = new System.Drawing.Point(561, 320);
+            this.pictureBox8.Location = new System.Drawing.Point(563, 404);
             this.pictureBox8.Margin = new System.Windows.Forms.Padding(2);
             this.pictureBox8.Name = "pictureBox8";
             this.pictureBox8.Size = new System.Drawing.Size(98, 66);
@@ -177,7 +177,7 @@
             // 
             this.pictureBox2.BackColor = System.Drawing.Color.Transparent;
             this.pictureBox2.Image = global::Hog_Jumper.Properties.Resources.back;
-            this.pictureBox2.Location = new System.Drawing.Point(623, 542);
+            this.pictureBox2.Location = new System.Drawing.Point(640, 585);
             this.pictureBox2.Margin = new System.Windows.Forms.Padding(2);
             this.pictureBox2.Name = "pictureBox2";
             this.pictureBox2.Size = new System.Drawing.Size(98, 66);
