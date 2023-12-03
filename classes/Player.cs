@@ -20,8 +20,8 @@ namespace Hog_Jumper.classes
             // определенный спрайт в скинах
             // сюда после точки название закидывать пон
 
-            sprite = Properties.Resources.Png; //добавить нужный спрайт
-            physics = new Physics(new Point(100, 350), new Size(40, 40));
+            sprite = Properties.Resources.Hog1_standing; 
+            physics = new Physics(new Point(100, 440), new Size(40, 40));
         }
 
         public void DrawSprite(Graphics g)

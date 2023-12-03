@@ -178,6 +178,9 @@
     <None Include="Resources\backgroundMainMenu1.png" />
     <None Include="Resources\border.png" />
     <None Include="Resources\border_color.png" />
+    <None Include="Resources\Hog1_standing.png" />
+    <None Include="Resources\background.png" />
+    <None Include="Resources\platform_cl.png" />
     <Content Include="Resources\Sound_34393800 1636125459.mp3" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
