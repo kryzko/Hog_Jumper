@@ -35,20 +35,20 @@ namespace Hog_Jumper
             string propertiesPath = Path.Combine(projectDirectory, "Resources");
             if (isOn)
             { 
-                pictureBox2.Image = Image.FromFile(Path.Combine(propertiesPath, "3.jpg"));
+                pictureBox2.Image = Image.FromFile("3.jpg");
                 isOn = false;
 
                 SoundPlayer Player = new SoundPlayer();
-                Player.SoundLocation = Path.Combine(propertiesPath, "7.wav"); 
+                Player.SoundLocation =  "7.wav"; 
                 Player.Stop();
             }
             else if (!isOn)
             {
-                pictureBox2.Image = Image.FromFile(Path.Combine(propertiesPath, "5.jpg"));
+                pictureBox2.Image = Image.FromFile( "5.jpg");
                 isOn= true;
 
                 SoundPlayer Player = new SoundPlayer();
-                Player.SoundLocation = Path.Combine(propertiesPath, "7.wav");
+                Player.SoundLocation ="7.wav";
                 Player.PlayLooping();
             }
 
