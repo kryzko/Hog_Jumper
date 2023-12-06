@@ -10,7 +10,7 @@ using System.Collections;
 
 namespace Hog_Jumper.DBFolder
 {
-    internal class Query
+    internal class Query//класс для работы с БД
     {
         OleDbConnection connection;
         OleDbCommand command;

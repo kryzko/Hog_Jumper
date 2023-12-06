@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 
 namespace Hog_Jumper.DBFolder
 {
-    public static class login
+    public static class login//класс для сохранинения логина пользователя
     {
         public static string log;
     }

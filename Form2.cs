@@ -87,5 +87,18 @@ namespace Hog_Jumper
         {
             Application.Exit();
         }
+
+        private void panel1_Scroll(object sender, ScrollEventArgs e)
+        {
+            //if (e.Type == ScrollEventType.SmallIncrement || e.Type == ScrollEventType.LargeIncrement)
+            //{
+            //    panel1.BackgroundImage = new Bitmap(panel1.BackgroundImage, panel1.BackgroundImage.Width, (int)(panel1.BackgroundImage.Height * 1.1)); // Увеличиваем высоту на 10%
+            //}
+            //// Уменьшение высоты фоновой картинки при скролле вверх
+            //else if (e.Type == ScrollEventType.SmallDecrement || e.Type == ScrollEventType.LargeDecrement)
+            //{
+            //    panel1.BackgroundImage = new Bitmap(panel1.BackgroundImage, panel1.BackgroundImage.Width, (int)(panel1.BackgroundImage.Height * 0.9)); // Уменьшаем высоту на 10%
+            //}
+        }
     }
 }
