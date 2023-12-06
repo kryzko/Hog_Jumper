@@ -70,9 +70,17 @@ namespace Hog_Jumper.DBFolder
         public void UpdatingRecordsToTable(string login, int score)
         {
             connection.Open();
-            command = new OleDbCommand($"UPDATE Users SET score = {score} WHERE login = '{login}'", connection);
-            command.ExecuteNonQuery();
+            command = new OleDbCommand($"select score from Users where login = '{login}' ", connection);
+            var result = command.ExecuteScalar();
             connection.Close();
+            if (Convert.ToInt32(result) < score)
+            {
+                connection.Open();
+                command = new OleDbCommand($"UPDATE Users SET score = {score} WHERE login = '{login}'", connection);
+                command.ExecuteNonQuery();
+                connection.Close();
+            }
+                        
         }
         public void OutputOfRecordsInGrid(DataGridView tableRecords)
         {
