@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Hog_Jumper.DBFolder;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -13,10 +14,47 @@ namespace Hog_Jumper
 {
     public partial class Form2 : Form
     {
+        Query controller;
+        Label[] LoginUsers = new Label[100];
+        Label[] ScoreUsers = new Label[100];
+        int KolUsers = 0;
         public Form2()
         {
             InitializeComponent();
             this.StartPosition = FormStartPosition.CenterScreen;
+            controller = new Query(ConnectionString.ConnectStr);
+            int y = 20;
+            int x = 200;
+            for(int i = 0; i< 100; i++)
+            {
+                ScoreUsers[i] = new Label();
+                ScoreUsers[i].Height = 35;
+                ScoreUsers[i].Location = new Point(x, y);
+                ScoreUsers[i].Font= new Font("System", 25, FontStyle.Regular);
+                try
+                {
+                    controller.OutputOfRecordsInLabel(i, ScoreUsers[i]);
+                }
+                catch { KolUsers = i; break; }
+                panel1.Controls.Add(ScoreUsers[i]);
+                y += 40;
+            }
+            y = 20;
+            x = 40;
+            for (int i = 0; i < 100; i++)
+            {
+                LoginUsers[i] = new Label();
+                LoginUsers[i].Height = 35;
+                LoginUsers[i].Location = new Point(x, y);
+                LoginUsers[i].Font = new Font("System", 25, FontStyle.Regular);
+                try
+                {
+                    controller.OutputOfLoginInLabel(i, LoginUsers[i]);
+                }
+                catch { KolUsers = i; break; }
+                panel1.Controls.Add(LoginUsers[i]);
+                y += 40;
+            }
         }
 
         private void Form2_Load(object sender, EventArgs e)

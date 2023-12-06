@@ -6,6 +6,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using System.Collections;
 
 namespace Hog_Jumper.DBFolder
 {
@@ -35,7 +36,7 @@ namespace Hog_Jumper.DBFolder
         public void Add(string login, string password)//добавление строки в таблицу Users
         {
             connection.Open();
-            command = new OleDbCommand($"INSERT INTO [Users] ([login], [password]) VALUES('{login}', '{password}' )", connection);
+            command = new OleDbCommand($"INSERT INTO [Users] ([login], [password], [score]) VALUES('{login}', '{password}', {0} )", connection);
             command.ExecuteNonQuery();
             connection.Close();
         }
@@ -73,7 +74,7 @@ namespace Hog_Jumper.DBFolder
             command.ExecuteNonQuery();
             connection.Close();
         }
-        public void OutputOfRecords(DataGridView tableRecords)
+        public void OutputOfRecordsInGrid(DataGridView tableRecords)
         {
             connection.Open();
             dataAdapter = new OleDbDataAdapter("SELECT login,score FROM Users", connection);
@@ -81,6 +82,26 @@ namespace Hog_Jumper.DBFolder
             dataAdapter.Fill(dataTable);
             tableRecords.DataSource = dataTable;
             connection.Close();
+        }
+        public void OutputOfRecordsInLabel(int index,Label label)
+        {
+            connection.Open();
+            dataAdapter = new OleDbDataAdapter("SELECT score FROM Users", connection);
+            DataTable dataTable = new DataTable();
+            dataAdapter.Fill(dataTable);
+            label.Text = dataTable.Rows[index]["score"].ToString();
+            connection.Close();
+
+        }
+        public void OutputOfLoginInLabel(int index, Label label)
+        {
+            connection.Open();
+            dataAdapter = new OleDbDataAdapter("SELECT login FROM Users", connection);
+            DataTable dataTable = new DataTable();
+            dataAdapter.Fill(dataTable);
+            label.Text = index.ToString() + ". " + dataTable.Rows[index]["login"].ToString();
+            connection.Close();
+
         }
     }
 }
