@@ -23,7 +23,8 @@ namespace Hog_Jumper
             textBox2.UseSystemPasswordChar = true;
             textBox3.UseSystemPasswordChar = true;
             this.StartPosition = FormStartPosition.CenterScreen;
-            //controller.OutputOfRecords(dataGridView1);
+            int score =  100;
+            //controller.UpdatingRecordsToTable("veronika1", score);
 
         }
 
