@@ -16,7 +16,7 @@ namespace Hog_Jumper.DBFolder
         OleDbCommand command;
         OleDbDataAdapter dataAdapter;
         DataTable bufferTable;
-
+        
         public Query(string Conn)
         {
             connection = new OleDbConnection(Conn);
@@ -101,5 +101,7 @@ namespace Hog_Jumper.DBFolder
             connection.Close();
             label.Text = bufferTable.Rows[index]["login"].ToString();
         }
+        
+
     }
 }

@@ -15,6 +15,7 @@ namespace Hog_Jumper.DBFolder
             {
                 return ConfigurationManager.ConnectionStrings["Hog_Jumper.Properties.Settings.ConnectionString"].ConnectionString;
             }
+            
         }
     }
 }

@@ -92,6 +92,7 @@
     <Compile Include="classes\Platforms.cs" />
     <Compile Include="classes\Player.cs" />
     <Compile Include="classes\Transform.cs" />
+    <Compile Include="DBFolder\login.cs" />
     <Compile Include="DBFolder\ConnectionString.cs" />
     <Compile Include="DBFolder\Query.cs" />
     <Compile Include="Form1.cs">
@@ -199,6 +200,7 @@
     <None Include="Resources\Png.png" />
   </ItemGroup>
   <ItemGroup>
+    <None Include="Resources\wooden_panel1.png" />
     <None Include="Resources\глаз.png" />
     <None Include="Resources\sound_yes1.png" />
     <None Include="Resources\sound_no1.png" />

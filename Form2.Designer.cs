@@ -64,11 +64,11 @@
             // panel1
             // 
             this.panel1.BackColor = System.Drawing.Color.Transparent;
-            this.panel1.BackgroundImage = global::Hog_Jumper.Properties.Resources.background;
+            this.panel1.BackgroundImage = global::Hog_Jumper.Properties.Resources.wooden_panel;
             this.panel1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.panel1.Location = new System.Drawing.Point(191, 136);
+            this.panel1.Location = new System.Drawing.Point(178, 138);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(408, 434);
+            this.panel1.Size = new System.Drawing.Size(430, 452);
             this.panel1.TabIndex = 3;
             // 
             // Form2

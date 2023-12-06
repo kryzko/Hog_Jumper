@@ -28,6 +28,7 @@ namespace Hog_Jumper
             {
                 if(controller.SearchPasswordWhereLogin(textBox1.Text, textBox2.Text))
                 {
+                    login.log = textBox1.Text;
                     Form1 form1 = new Form1();
                     form1.Visible = true;
                     this.Visible = false;
@@ -68,6 +69,11 @@ namespace Hog_Jumper
         private void pictureBox1_Click(object sender, EventArgs e)
         {
             Application.Exit();
+        }
+
+        private void Form7_Load(object sender, EventArgs e)
+        {
+
         }
     }
 }

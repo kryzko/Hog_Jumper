@@ -23,11 +23,12 @@ namespace Hog_Jumper
             InitializeComponent();
             this.StartPosition = FormStartPosition.CenterScreen;
             controller = new Query(ConnectionString.ConnectStr);
-            int y = 20;
+            int y = 50;
             int x = 200;
             for(int i = 0; i< 100; i++)
             {
                 ScoreUsers[i] = new Label();
+                ScoreUsers[i].ForeColor = Color.FromArgb(100, 81, 70);
                 ScoreUsers[i].Location = new Point(x, y);
                 ScoreUsers[i].Font= new Font("System", 14, FontStyle.Regular);
                 try
@@ -38,11 +39,12 @@ namespace Hog_Jumper
                 panel1.Controls.Add(ScoreUsers[i]);
                 y += 40;
             }
-            y = 20;
-            x = 40;
+            y = 50;
+            x = 50;
             for (int i = 0; i < 100; i++)
             {
                 LoginUsers[i] = new Label();
+                LoginUsers[i].ForeColor = Color.FromArgb(100, 81, 70);
                 LoginUsers[i].Location = new Point(x, y);
                 LoginUsers[i].Font = new Font("System", 14, FontStyle.Regular);
                 try

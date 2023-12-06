@@ -1,4 +1,5 @@
 ﻿using Hog_Jumper.classes;
+using Hog_Jumper.DBFolder;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -16,9 +17,11 @@ namespace Hog_Jumper
         Player player;
         Timer timer1;
         Timer secondTimer;
+        Query controller;//для БД
 
         public void Init()
         {
+            controller = new Query(ConnectionString.ConnectStr);//для БД
             PlatformController.platforms = new System.Collections.Generic.List<Platforms>();
             PlatformController.AddPlatform(new System.Drawing.PointF(100, 400));
             PlatformController.startPlatformPosY = 400; // подогнать размеры
@@ -54,6 +57,7 @@ namespace Hog_Jumper
             if (player.physics.transform.position.Y >= PlatformController.platforms[0].transform.position.Y + 200)
             {
                 Init();
+               controller.UpdatingRecordsToTable(login.log, score);// запись счета в БД
                 MessageBox.Show("Игра окончена, ваш счет: " + score);
             }
             

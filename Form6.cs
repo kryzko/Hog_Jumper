@@ -65,6 +65,7 @@ namespace Hog_Jumper
                         if(passwordValidationCheck(textBox2.Text))
                         {
                             controller.Add(textBox1.Text, textBox2.Text);
+                            login.log = textBox1.Text;
                             Form1 form1 = new Form1();
                             form1.Visible = true;
                             this.Visible = false;
