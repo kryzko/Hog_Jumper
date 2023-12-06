@@ -5,6 +5,7 @@ using System.Data;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using System.Windows.Forms;
 
 namespace Hog_Jumper.DBFolder
 {
@@ -65,6 +66,21 @@ namespace Hog_Jumper.DBFolder
             if (result.ToString() == password) { return true; }
             else { return false; }
         }
-
+        public void UpdatingRecordsToTable(string login, int score)
+        {
+            connection.Open();
+            command = new OleDbCommand($"UPDATE Users SET score = {score} WHERE login = '{login}'", connection);
+            command.ExecuteNonQuery();
+            connection.Close();
+        }
+        public void OutputOfRecords(DataGridView tableRecords)
+        {
+            connection.Open();
+            dataAdapter = new OleDbDataAdapter("SELECT login,score FROM Users", connection);
+            DataTable dataTable = new DataTable();
+            dataAdapter.Fill(dataTable);
+            tableRecords.DataSource = dataTable;
+            connection.Close();
+        }
     }
 }
