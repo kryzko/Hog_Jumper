@@ -28,9 +28,8 @@ namespace Hog_Jumper
             for(int i = 0; i< 100; i++)
             {
                 ScoreUsers[i] = new Label();
-                ScoreUsers[i].Height = 35;
                 ScoreUsers[i].Location = new Point(x, y);
-                ScoreUsers[i].Font= new Font("System", 25, FontStyle.Regular);
+                ScoreUsers[i].Font= new Font("System", 14, FontStyle.Regular);
                 try
                 {
                     controller.OutputOfRecordsInLabel(i, ScoreUsers[i]);
@@ -44,9 +43,8 @@ namespace Hog_Jumper
             for (int i = 0; i < 100; i++)
             {
                 LoginUsers[i] = new Label();
-                LoginUsers[i].Height = 35;
                 LoginUsers[i].Location = new Point(x, y);
-                LoginUsers[i].Font = new Font("System", 25, FontStyle.Regular);
+                LoginUsers[i].Font = new Font("System", 14, FontStyle.Regular);
                 try
                 {
                     controller.OutputOfLoginInLabel(i, LoginUsers[i]);

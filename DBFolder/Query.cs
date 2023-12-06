@@ -86,22 +86,20 @@ namespace Hog_Jumper.DBFolder
         public void OutputOfRecordsInLabel(int index,Label label)
         {
             connection.Open();
-            dataAdapter = new OleDbDataAdapter("SELECT score FROM Users", connection);
-            DataTable dataTable = new DataTable();
-            dataAdapter.Fill(dataTable);
-            label.Text = dataTable.Rows[index]["score"].ToString();
+            dataAdapter = new OleDbDataAdapter("SELECT score FROM Users ORDER BY score DESC", connection);
+            bufferTable.Clear();
+            dataAdapter.Fill(bufferTable);
             connection.Close();
-
+            label.Text = bufferTable.Rows[index]["score"].ToString();
         }
         public void OutputOfLoginInLabel(int index, Label label)
         {
             connection.Open();
-            dataAdapter = new OleDbDataAdapter("SELECT login FROM Users", connection);
-            DataTable dataTable = new DataTable();
-            dataAdapter.Fill(dataTable);
-            label.Text = index.ToString() + ". " + dataTable.Rows[index]["login"].ToString();
+            dataAdapter = new OleDbDataAdapter("SELECT login FROM Users ORDER BY score DESC", connection);
+            bufferTable.Clear();
+            dataAdapter.Fill(bufferTable);
             connection.Close();
-
+            label.Text = bufferTable.Rows[index]["login"].ToString();
         }
     }
 }

@@ -39,7 +39,7 @@
             // 
             this.pictureBox1.BackgroundImage = global::Hog_Jumper.Properties.Resources.праздник;
             this.pictureBox1.Location = new System.Drawing.Point(837, 8);
-            this.pictureBox1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.pictureBox1.Margin = new System.Windows.Forms.Padding(2);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(138, 32);
             this.pictureBox1.TabIndex = 0;
@@ -52,7 +52,7 @@
             this.pictureBox2.BackColor = System.Drawing.Color.Transparent;
             this.pictureBox2.Image = global::Hog_Jumper.Properties.Resources.back;
             this.pictureBox2.Location = new System.Drawing.Point(669, 11);
-            this.pictureBox2.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.pictureBox2.Margin = new System.Windows.Forms.Padding(2);
             this.pictureBox2.Name = "pictureBox2";
             this.pictureBox2.Size = new System.Drawing.Size(88, 62);
             this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -64,7 +64,7 @@
             // panel1
             // 
             this.panel1.BackColor = System.Drawing.Color.Transparent;
-            this.panel1.BackgroundImage = global::Hog_Jumper.Properties.Resources.праздник;
+            this.panel1.BackgroundImage = global::Hog_Jumper.Properties.Resources.background;
             this.panel1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.panel1.Location = new System.Drawing.Point(191, 136);
             this.panel1.Name = "panel1";
@@ -81,6 +81,7 @@
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.pictureBox2);
             this.Controls.Add(this.pictureBox1);
+            this.DoubleBuffered = true;
             this.Name = "Form2";
             this.Text = "Records";
             this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.Form2_FormClosing);
