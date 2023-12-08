@@ -19,7 +19,7 @@ namespace Hog_Jumper.classes
         {
             transform = new Transform(position, size);
             gravity = 5;
-            a = 1f;
+            a = 0.8f;
             dx = 0;
         }
 
@@ -67,11 +67,17 @@ namespace Hog_Jumper.classes
                     }
                 }
             }
+
+
+
+
+
+
         }
 
         public void AddForce()
         {
-            gravity -= 25;
+            gravity -= 15;//25
         }
     }
 }

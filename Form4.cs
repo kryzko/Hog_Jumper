@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Hog_Jumper.classes;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -14,10 +15,12 @@ namespace Hog_Jumper
 {
     public partial class Form4 : Form
     {
+
         bool isOn = true;
         public Form4()
         {
             InitializeComponent();
+            this.BackgroundImage = ThemeSettings.backgroundTheme;
             this.StartPosition = FormStartPosition.CenterScreen;
         }
 
@@ -57,6 +60,23 @@ namespace Hog_Jumper
         private void Form4_FormClosing(object sender, FormClosingEventArgs e)
         {
             Application.Exit();
+        }
+
+        private void Form4_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        private void pictureBox3_Click(object sender, EventArgs e)
+        {
+            ThemeSettings.backgroundTheme = new Bitmap("light_theme.png");
+            this.BackgroundImage = ThemeSettings.backgroundTheme;
+        }
+
+        private void pictureBox4_Click(object sender, EventArgs e)
+        {
+            ThemeSettings.backgroundTheme = new Bitmap("dark_theme.png");
+            this.BackgroundImage = ThemeSettings.backgroundTheme;
         }
     }
 }

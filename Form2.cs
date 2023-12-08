@@ -1,4 +1,5 @@
-﻿using Hog_Jumper.DBFolder;
+﻿using Hog_Jumper.classes;
+using Hog_Jumper.DBFolder;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -21,6 +22,7 @@ namespace Hog_Jumper
         public Form2()
         {
             InitializeComponent();
+            this.BackgroundImage = ThemeSettings.backgroundTheme;
             this.StartPosition = FormStartPosition.CenterScreen;
             controller = new Query(ConnectionString.ConnectStr);
             int y = 50;
@@ -59,7 +61,7 @@ namespace Hog_Jumper
 
         private void Form2_Load(object sender, EventArgs e)
         {
-
+            
         }
 
         private void button1_Click(object sender, EventArgs e)

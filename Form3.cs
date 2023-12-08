@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Hog_Jumper.classes;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -15,6 +16,7 @@ namespace Hog_Jumper
         public Form3()
         {
             InitializeComponent();
+            this.BackgroundImage = ThemeSettings.backgroundTheme;
             this.StartPosition = FormStartPosition.CenterScreen;
         }
 

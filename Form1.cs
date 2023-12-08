@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Hog_Jumper.classes;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -22,7 +23,7 @@ namespace Hog_Jumper
             this.Width = 600;
             this.Height = 600;
             this.StartPosition = FormStartPosition.CenterScreen;
-
+            this.BackgroundImage = ThemeSettings.backgroundTheme;
         }
 
         private void pictureBox1_Click(object sender, EventArgs e)
@@ -73,6 +74,10 @@ namespace Hog_Jumper
         private void Form1_FormClosing(object sender, FormClosingEventArgs e)
         {
             Application.Exit();
+        }
+
+        private void Form1_Load(object sender, EventArgs e)
+        {
         }
     }
 }

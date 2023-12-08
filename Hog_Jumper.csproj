@@ -91,6 +91,7 @@
     <Compile Include="classes\PlatformController.cs" />
     <Compile Include="classes\Platforms.cs" />
     <Compile Include="classes\Player.cs" />
+    <Compile Include="classes\ThemeSettings.cs" />
     <Compile Include="classes\Transform.cs" />
     <Compile Include="DBFolder\login.cs" />
     <Compile Include="DBFolder\ConnectionString.cs" />

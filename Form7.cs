@@ -1,4 +1,5 @@
-﻿using Hog_Jumper.DBFolder;
+﻿using Hog_Jumper.classes;
+using Hog_Jumper.DBFolder;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -20,6 +21,7 @@ namespace Hog_Jumper
             this.StartPosition = FormStartPosition.CenterScreen;
             controller = new Query(ConnectionString.ConnectStr);
             textBox2.UseSystemPasswordChar = true;
+            ThemeSettings.backgroundTheme = this.BackgroundImage;
         }
 
         private void pictureBox2_Click(object sender, EventArgs e)
