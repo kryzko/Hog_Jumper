@@ -23,7 +23,7 @@ namespace Hog_Jumper.classes
         public static void GenerateStartSequance()
         {
             Random r = new Random();
-            for (int i = 0; i < 10; i++)
+            for (int i = 0; i < 1000; i++)
             {
                 int x = r.Next(100, 500);
                 int y = r.Next(20, 30);
@@ -38,7 +38,7 @@ namespace Hog_Jumper.classes
         {
             ClearPlatforms();
                 Random r = new Random();
-                int x = r.Next(50, 550);
+                int x = r.Next(30, 150);
                 PointF position = new PointF(x, startPlatformPosY);
                 Platforms platform = new Platforms(position);
                 platforms.Add(platform);

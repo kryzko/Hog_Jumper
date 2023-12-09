@@ -23,8 +23,8 @@ namespace Hog_Jumper
         {
             controller = new Query(ConnectionString.ConnectStr);//для БД
             PlatformController.platforms = new System.Collections.Generic.List<Platforms>();
-            PlatformController.AddPlatform(new System.Drawing.PointF(100, 400));
-            PlatformController.startPlatformPosY = 400; // подогнать размеры
+            PlatformController.AddPlatform(new System.Drawing.PointF(100, 300));
+            PlatformController.startPlatformPosY = 300; // подогнать размеры
             PlatformController.score = 0;
             PlatformController.GenerateStartSequance();
             player = new Player();
@@ -101,7 +101,7 @@ namespace Hog_Jumper
             timer1.Start();
             this.KeyDown += new KeyEventHandler(OnKeyboardPressed);
             this.KeyUp += new KeyEventHandler(OnKeyboardUp);
-            this.BackgroundImage = Properties.Resources.background; // ThemeSettings.backgroundTheme;???????
+            this.BackgroundImage = ThemeSettings.backgroundTheme;
             this.Width = 600;
             this.Height = 600;
             this.Paint += new PaintEventHandler(OnRepaint);

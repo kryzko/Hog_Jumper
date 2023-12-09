@@ -19,7 +19,7 @@ namespace Hog_Jumper.classes
         {
             transform = new Transform(position, size);
             gravity = 5;
-            a = 0.8f;
+            a = 1f;
             dx = 0;
         }
 
@@ -77,7 +77,7 @@ namespace Hog_Jumper.classes
 
         public void AddForce()
         {
-            gravity -= 15;//25
+            gravity -= 25;
         }
     }
 }
