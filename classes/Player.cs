@@ -21,7 +21,7 @@ namespace Hog_Jumper.classes
             // сюда после точки название закидывать пон
 
             sprite = Properties.Resources.Hog1_standing; 
-            physics = new Physics(new Point(100, 300), new Size(60, 40));
+            physics = new Physics(new Point(100, 250), new Size(60, 40));
         }
 
         public void DrawSprite(Graphics g)
