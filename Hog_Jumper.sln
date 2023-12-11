@@ -5,7 +5,7 @@ VisualStudioVersion = 17.8.34309.116
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Hog_Jumper", "Hog_Jumper.csproj", "{470B2B75-C539-4EBB-9C56-7376B63D6508}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TestProject2", "..\TestProject2\TestProject2.csproj", "{E192AE3D-1A44-4E2C-8147-BD89D7914AF8}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UnitTestProject1", "..\UnitTestProject1\UnitTestProject1.csproj", "{74917F5C-A39A-43BC-941C-407424D36DFD}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -23,14 +23,14 @@ Global
 		{470B2B75-C539-4EBB-9C56-7376B63D6508}.Release|Any CPU.Build.0 = Release|Any CPU
 		{470B2B75-C539-4EBB-9C56-7376B63D6508}.Release|x86.ActiveCfg = Release|x86
 		{470B2B75-C539-4EBB-9C56-7376B63D6508}.Release|x86.Build.0 = Release|x86
-		{E192AE3D-1A44-4E2C-8147-BD89D7914AF8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{E192AE3D-1A44-4E2C-8147-BD89D7914AF8}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{E192AE3D-1A44-4E2C-8147-BD89D7914AF8}.Debug|x86.ActiveCfg = Debug|Any CPU
-		{E192AE3D-1A44-4E2C-8147-BD89D7914AF8}.Debug|x86.Build.0 = Debug|Any CPU
-		{E192AE3D-1A44-4E2C-8147-BD89D7914AF8}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{E192AE3D-1A44-4E2C-8147-BD89D7914AF8}.Release|Any CPU.Build.0 = Release|Any CPU
-		{E192AE3D-1A44-4E2C-8147-BD89D7914AF8}.Release|x86.ActiveCfg = Release|Any CPU
-		{E192AE3D-1A44-4E2C-8147-BD89D7914AF8}.Release|x86.Build.0 = Release|Any CPU
+		{74917F5C-A39A-43BC-941C-407424D36DFD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{74917F5C-A39A-43BC-941C-407424D36DFD}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{74917F5C-A39A-43BC-941C-407424D36DFD}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{74917F5C-A39A-43BC-941C-407424D36DFD}.Debug|x86.Build.0 = Debug|Any CPU
+		{74917F5C-A39A-43BC-941C-407424D36DFD}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{74917F5C-A39A-43BC-941C-407424D36DFD}.Release|Any CPU.Build.0 = Release|Any CPU
+		{74917F5C-A39A-43BC-941C-407424D36DFD}.Release|x86.ActiveCfg = Release|Any CPU
+		{74917F5C-A39A-43BC-941C-407424D36DFD}.Release|x86.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
