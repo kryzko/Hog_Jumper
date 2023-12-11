@@ -16,7 +16,7 @@ namespace Hog_Jumper
 {
     public partial class Form1 : Form
     {
-        
+        public int skin1 = 0;
         public Form1()
         {
             InitializeComponent();   
@@ -42,6 +42,7 @@ namespace Hog_Jumper
         private void pictureBox3_Click(object sender, EventArgs e)
         {
             Form3 form3 = new Form3();
+            form3.skin3 = this.skin1;
             form3.Show();
             form3.Size = this.Size;
             this.Visible = false;

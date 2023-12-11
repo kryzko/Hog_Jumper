@@ -18,6 +18,7 @@ namespace Hog_Jumper
         Timer timer1;
         Timer secondTimer;
         Query controller;//для БД
+        public int changedSkin;
 
         public void Init()
         {
@@ -27,7 +28,12 @@ namespace Hog_Jumper
             PlatformController.startPlatformPosY = 300; // подогнать размеры
             PlatformController.score = 0;
             PlatformController.GenerateStartSequance();
-            player = new Player();
+            Form1 newForm = new Form1();
+            changedSkin = newForm.skin1;
+            player = new Player(changedSkin);
+            //player.change();
+            //player.sprite = Properties.Resources.Png;
+            //player.changeSprite(2);
         }
 
         private void OnKeyboardUp(object sender, KeyEventArgs e)
@@ -59,6 +65,7 @@ namespace Hog_Jumper
                 Init();
                controller.UpdatingRecordsToTable(login.log, score);// запись счета в БД
                 MessageBox.Show("Игра окончена, ваш счет: " + score);
+                timer1.Interval = 0;
             }
             
 
@@ -112,6 +119,7 @@ namespace Hog_Jumper
         {
             Form1 form1 = new Form1();
             form1.timer1.Enabled = false;
+            form1.skin1 = this.changedSkin;
             form1.Visible = true;
             this.Visible = false;
         }

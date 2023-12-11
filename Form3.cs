@@ -13,6 +13,8 @@ namespace Hog_Jumper
 {
     public partial class Form3 : Form
     {
+
+        public int skin3 = 0;
         public Form3()
         {
             InitializeComponent();
@@ -23,6 +25,7 @@ namespace Hog_Jumper
         private void pictureBox1_Click(object sender, EventArgs e)
         {
             Form1 form1 = new Form1();
+            form1.skin1 = this.skin3;
             form1.timer1.Enabled = false;
             form1.Visible = true;
             this.Visible = false;
@@ -31,6 +34,26 @@ namespace Hog_Jumper
         private void Form3_FormClosing(object sender, FormClosingEventArgs e)
         {
             Application.Exit();
+        }
+
+        private void pictureBox5_Click(object sender, EventArgs e)
+        {
+            skin3 = 0;
+        }
+
+        private void pictureBox6_Click(object sender, EventArgs e)
+        {
+            skin3 = 1;
+        }
+
+        private void pictureBox7_Click(object sender, EventArgs e)
+        {
+            skin3 = 2;
+        }
+
+        private void pictureBox8_Click(object sender, EventArgs e)
+        {
+            skin3 = 3;
         }
     }
 }

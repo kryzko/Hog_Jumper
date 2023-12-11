@@ -96,6 +96,7 @@
             this.pictureBox5.Size = new System.Drawing.Size(237, 84);
             this.pictureBox5.TabIndex = 5;
             this.pictureBox5.TabStop = false;
+            this.pictureBox5.Click += new System.EventHandler(this.pictureBox5_Click);
             // 
             // pictureBox6
             // 
@@ -105,6 +106,7 @@
             this.pictureBox6.Size = new System.Drawing.Size(237, 84);
             this.pictureBox6.TabIndex = 6;
             this.pictureBox6.TabStop = false;
+            this.pictureBox6.Click += new System.EventHandler(this.pictureBox6_Click);
             // 
             // pictureBox7
             // 
@@ -114,6 +116,7 @@
             this.pictureBox7.Size = new System.Drawing.Size(237, 84);
             this.pictureBox7.TabIndex = 7;
             this.pictureBox7.TabStop = false;
+            this.pictureBox7.Click += new System.EventHandler(this.pictureBox7_Click);
             // 
             // pictureBox8
             // 
@@ -123,6 +126,7 @@
             this.pictureBox8.Size = new System.Drawing.Size(237, 84);
             this.pictureBox8.TabIndex = 9;
             this.pictureBox8.TabStop = false;
+            this.pictureBox8.Click += new System.EventHandler(this.pictureBox8_Click);
             // 
             // pictureBox9
             // 
