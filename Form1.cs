@@ -24,6 +24,9 @@ namespace Hog_Jumper
             this.Height = 600;
             this.StartPosition = FormStartPosition.CenterScreen;
             this.BackgroundImage = ThemeSettings.backgroundTheme;
+
+            SoundPlayer Player = new SoundPlayer();
+            Player.Play();
         }
 
         private void pictureBox1_Click(object sender, EventArgs e)
@@ -60,7 +63,6 @@ namespace Hog_Jumper
         {
             Form5 form5 = new Form5();
             form5.changedSkin = this.skin1;
-            MessageBox.Show(form5.changedSkin.ToString());
             form5.Show();
             form5.Size = this.Size;
             this.Visible = false;
@@ -69,8 +71,8 @@ namespace Hog_Jumper
         private void timer1_Tick(object sender, EventArgs e)
         {
             SoundPlayer Player = new SoundPlayer();
-            Player.SoundLocation =  "7.wav";
-            Player.PlayLooping();
+            Player.SoundLocation = "1.wav";
+            if (MusicSkin.MusicEnabled) { Player.Play(); }
             timer1.Enabled = false;
         }
 

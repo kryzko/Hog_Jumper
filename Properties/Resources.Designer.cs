@@ -343,6 +343,16 @@ namespace Hog_Jumper.Properties {
         /// <summary>
         ///   Поиск локализованного ресурса типа System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap wooden_panel1 {
+            get {
+                object obj = ResourceManager.GetObject("wooden_panel1", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Поиск локализованного ресурса типа System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap глаз {
             get {
                 object obj = ResourceManager.GetObject("глаз", resourceCulture);

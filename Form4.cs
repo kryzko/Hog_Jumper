@@ -38,21 +38,25 @@ namespace Hog_Jumper
             string propertiesPath = Path.Combine(projectDirectory, "Resources");
             if (isOn)
             { 
-                pictureBox2.Image = Image.FromFile("3.jpg");
+                pictureBox2.Image = Image.FromFile("sound_no.png");
                 isOn = false;
 
                 SoundPlayer Player = new SoundPlayer();
-                Player.SoundLocation =  "7.wav"; 
+                if (MusicSkin.MusicNum == 1) { Player.SoundLocation = "1.wav"; }
+                else { Player.SoundLocation = "2.wav"; }
+                MusicSkin.MusicEnabled = false;
                 Player.Stop();
             }
             else if (!isOn)
             {
-                pictureBox2.Image = Image.FromFile( "5.jpg");
+                pictureBox2.Image = Image.FromFile( "sound_yes.png");
                 isOn= true;
 
                 SoundPlayer Player = new SoundPlayer();
-                Player.SoundLocation ="7.wav";
-                Player.PlayLooping();
+                if (MusicSkin.MusicNum == 1) { Player.SoundLocation = "1.wav"; }
+                else { Player.SoundLocation = "2.wav"; }
+                MusicSkin.MusicEnabled = true;
+                Player.Play();
             }
 
         }
@@ -71,12 +75,20 @@ namespace Hog_Jumper
         {
             ThemeSettings.backgroundTheme = new Bitmap("light_theme.png");
             this.BackgroundImage = ThemeSettings.backgroundTheme;
+            SoundPlayer Player = new SoundPlayer();
+            Player.SoundLocation = "1.wav";
+            MusicSkin.MusicNum = 1;
+            if (MusicSkin.MusicEnabled) { Player.Play(); }
         }
 
         private void pictureBox4_Click(object sender, EventArgs e)
         {
             ThemeSettings.backgroundTheme = new Bitmap("dark_theme.png");
             this.BackgroundImage = ThemeSettings.backgroundTheme;
+            SoundPlayer Player = new SoundPlayer();
+            Player.SoundLocation = "2.wav";
+            MusicSkin.MusicNum = 2;
+            if (MusicSkin.MusicEnabled) { Player.Play(); }
         }
     }
 }

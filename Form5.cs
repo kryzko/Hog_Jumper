@@ -6,6 +6,7 @@ using System.ComponentModel;
 using System.Data;
 using System.Drawing;
 using System.Linq;
+using System.Media;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
@@ -130,6 +131,10 @@ namespace Hog_Jumper
             this.Height = 600;
             this.Paint += new PaintEventHandler(OnRepaint);
 
+            SoundPlayer Player = new SoundPlayer();
+            Player.SoundLocation = "6.wav";
+            if (MusicSkin.MusicEnabled) { Player.Play(); }
+
         }
 
         private void UpdateTimer(object sender, EventArgs e)
@@ -142,6 +147,10 @@ namespace Hog_Jumper
         {
             Form1 form1 = new Form1();
             form1.timer1.Enabled = false;
+            SoundPlayer Player = new SoundPlayer();
+            if (MusicSkin.MusicNum == 1) { Player.SoundLocation = "1.wav"; }
+            else { Player.SoundLocation = "2.wav"; }
+            if (MusicSkin.MusicEnabled) { Player.Play(); }
             form1.skin1 = this.changedSkin;
             form1.Visible = true;
             this.Close();
@@ -159,6 +168,12 @@ namespace Hog_Jumper
             Init();
             timer2.Start();
 
+        }
+
+        private void timer1_Tick(object sender, EventArgs e)
+        {
+            
+      
         }
     }
 }

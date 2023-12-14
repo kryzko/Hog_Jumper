@@ -87,6 +87,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="classes\MusicSkin.cs" />
     <Compile Include="classes\Physics.cs" />
     <Compile Include="classes\PlatformController.cs" />
     <Compile Include="classes\Platforms.cs" />
@@ -201,6 +202,7 @@
     <None Include="Resources\Png.png" />
   </ItemGroup>
   <ItemGroup>
+    <None Include="Resources\wooden_panel2.png" />
     <None Include="Resources\wooden_panel1.png" />
     <None Include="Resources\глаз.png" />
     <None Include="Resources\sound_yes1.png" />
