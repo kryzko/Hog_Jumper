@@ -132,6 +132,7 @@
             this.pictureBox9.TabIndex = 14;
             this.pictureBox9.TabStop = false;
             this.pictureBox9.Tag = "в главное меню";
+            this.pictureBox9.Click += new System.EventHandler(this.pictureBox9_Click);
             // 
             // pictureBox5
             // 
@@ -146,6 +147,7 @@
             this.pictureBox5.TabIndex = 15;
             this.pictureBox5.TabStop = false;
             this.pictureBox5.Tag = "в главное меню";
+            this.pictureBox5.Click += new System.EventHandler(this.pictureBox5_Click_1);
             // 
             // pictureBox6
             // 
@@ -160,6 +162,7 @@
             this.pictureBox6.TabIndex = 16;
             this.pictureBox6.TabStop = false;
             this.pictureBox6.Tag = "в главное меню";
+            this.pictureBox6.Click += new System.EventHandler(this.pictureBox6_Click_1);
             // 
             // pictureBox7
             // 
@@ -174,6 +177,7 @@
             this.pictureBox7.TabIndex = 17;
             this.pictureBox7.TabStop = false;
             this.pictureBox7.Tag = "в главное меню";
+            this.pictureBox7.Click += new System.EventHandler(this.pictureBox7_Click_1);
             // 
             // Form3
             // 

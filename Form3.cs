@@ -36,22 +36,24 @@ namespace Hog_Jumper
             Application.Exit();
         }
 
-        private void pictureBox5_Click(object sender, EventArgs e)
+        
+
+        private void pictureBox9_Click(object sender, EventArgs e)
         {
             skin3 = 0;
         }
 
-        private void pictureBox6_Click(object sender, EventArgs e)
+        private void pictureBox5_Click_1(object sender, EventArgs e)
         {
             skin3 = 1;
         }
 
-        private void pictureBox7_Click(object sender, EventArgs e)
+        private void pictureBox6_Click_1(object sender, EventArgs e)
         {
             skin3 = 2;
         }
 
-        private void pictureBox8_Click(object sender, EventArgs e)
+        private void pictureBox7_Click_1(object sender, EventArgs e)
         {
             skin3 = 3;
         }
