@@ -25,8 +25,8 @@ namespace Hog_Jumper
             this.BackgroundImage = ThemeSettings.backgroundTheme;
             this.StartPosition = FormStartPosition.CenterScreen;
             controller = new Query(ConnectionString.ConnectStr);
-            int y = 50;
-            int x = 200;
+            int y = 10;
+            int x = 140;
             for(int i = 0; i< 100; i++)
             {
                 ScoreUsers[i] = new Label();
@@ -41,8 +41,8 @@ namespace Hog_Jumper
                 panel1.Controls.Add(ScoreUsers[i]);
                 y += 40;
             }
-            y = 50;
-            x = 50;
+            y = 10;
+            x = 40;
             for (int i = 0; i < 100; i++)
             {
                 LoginUsers[i] = new Label();
@@ -71,10 +71,7 @@ namespace Hog_Jumper
 
         private void pictureBox1_Click(object sender, EventArgs e)
         {
-            Form1 form1 = new Form1();
-            form1.timer1.Enabled = false;
-            form1.Visible = true;
-            this.Visible = false;
+    
         }
 
         private void pictureBox2_Click(object sender, EventArgs e)

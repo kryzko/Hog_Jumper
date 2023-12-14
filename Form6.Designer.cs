@@ -52,6 +52,7 @@
             // pictureBox3
             // 
             this.pictureBox3.BackColor = System.Drawing.Color.Transparent;
+            this.pictureBox3.Cursor = System.Windows.Forms.Cursors.Hand;
             this.pictureBox3.Image = global::Hog_Jumper.Properties.Resources.authorization;
             this.pictureBox3.Location = new System.Drawing.Point(252, 487);
             this.pictureBox3.Name = "pictureBox3";
@@ -65,6 +66,7 @@
             // pictureBox1
             // 
             this.pictureBox1.BackColor = System.Drawing.Color.Transparent;
+            this.pictureBox1.Cursor = System.Windows.Forms.Cursors.Hand;
             this.pictureBox1.Image = global::Hog_Jumper.Properties.Resources.cross_exit;
             this.pictureBox1.Location = new System.Drawing.Point(674, 11);
             this.pictureBox1.Margin = new System.Windows.Forms.Padding(2);
@@ -148,6 +150,7 @@
             // pictureBox7
             // 
             this.pictureBox7.BackColor = System.Drawing.Color.Transparent;
+            this.pictureBox7.Cursor = System.Windows.Forms.Cursors.Hand;
             this.pictureBox7.Image = global::Hog_Jumper.Properties.Resources.глаз;
             this.pictureBox7.Location = new System.Drawing.Point(563, 323);
             this.pictureBox7.Margin = new System.Windows.Forms.Padding(2);
@@ -162,6 +165,7 @@
             // pictureBox8
             // 
             this.pictureBox8.BackColor = System.Drawing.Color.Transparent;
+            this.pictureBox8.Cursor = System.Windows.Forms.Cursors.Hand;
             this.pictureBox8.Image = global::Hog_Jumper.Properties.Resources.глаз;
             this.pictureBox8.Location = new System.Drawing.Point(563, 404);
             this.pictureBox8.Margin = new System.Windows.Forms.Padding(2);
@@ -176,6 +180,7 @@
             // pictureBox2
             // 
             this.pictureBox2.BackColor = System.Drawing.Color.Transparent;
+            this.pictureBox2.Cursor = System.Windows.Forms.Cursors.Hand;
             this.pictureBox2.Image = global::Hog_Jumper.Properties.Resources.back;
             this.pictureBox2.Location = new System.Drawing.Point(640, 585);
             this.pictureBox2.Margin = new System.Windows.Forms.Padding(2);
@@ -205,6 +210,7 @@
             this.Controls.Add(this.pictureBox3);
             this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.pictureBox4);
+            this.Cursor = System.Windows.Forms.Cursors.Default;
             this.DoubleBuffered = true;
             this.Margin = new System.Windows.Forms.Padding(2);
             this.Name = "Form6";

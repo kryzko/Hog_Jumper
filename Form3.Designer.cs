@@ -50,6 +50,7 @@
             // 
             // pictureBox8
             // 
+            this.pictureBox8.Cursor = System.Windows.Forms.Cursors.Hand;
             this.pictureBox8.Image = global::Hog_Jumper.Properties.Resources.choose;
             this.pictureBox8.Location = new System.Drawing.Point(501, 607);
             this.pictureBox8.Name = "pictureBox8";
@@ -71,6 +72,7 @@
             // 
             // pictureBox7
             // 
+            this.pictureBox7.Cursor = System.Windows.Forms.Cursors.Hand;
             this.pictureBox7.Image = global::Hog_Jumper.Properties.Resources.choose;
             this.pictureBox7.Location = new System.Drawing.Point(107, 607);
             this.pictureBox7.Name = "pictureBox7";
@@ -82,6 +84,7 @@
             // 
             // pictureBox6
             // 
+            this.pictureBox6.Cursor = System.Windows.Forms.Cursors.Hand;
             this.pictureBox6.Image = global::Hog_Jumper.Properties.Resources.choose;
             this.pictureBox6.Location = new System.Drawing.Point(501, 319);
             this.pictureBox6.Name = "pictureBox6";
@@ -93,6 +96,7 @@
             // 
             // pictureBox5
             // 
+            this.pictureBox5.Cursor = System.Windows.Forms.Cursors.Hand;
             this.pictureBox5.Image = global::Hog_Jumper.Properties.Resources.choose;
             this.pictureBox5.Location = new System.Drawing.Point(115, 319);
             this.pictureBox5.Name = "pictureBox5";
@@ -135,6 +139,7 @@
             // pictureBox1
             // 
             this.pictureBox1.BackColor = System.Drawing.Color.Transparent;
+            this.pictureBox1.Cursor = System.Windows.Forms.Cursors.Hand;
             this.pictureBox1.Image = global::Hog_Jumper.Properties.Resources.back;
             this.pictureBox1.Location = new System.Drawing.Point(669, 11);
             this.pictureBox1.Margin = new System.Windows.Forms.Padding(2);
@@ -161,7 +166,8 @@
             this.Controls.Add(this.pictureBox3);
             this.Controls.Add(this.pictureBox2);
             this.Controls.Add(this.pictureBox1);
-            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.Cursor = System.Windows.Forms.Cursors.Default;
+            this.Margin = new System.Windows.Forms.Padding(2);
             this.Name = "Form3";
             this.Text = "Skins";
             this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.Form3_FormClosing);

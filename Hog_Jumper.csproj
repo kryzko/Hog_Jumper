@@ -226,6 +226,8 @@
     <None Include="Resources\Hog3_standing.png" />
     <None Include="Resources\Hog4_standing.png" />
     <None Include="Resources\choose.png" />
+    <None Include="Resources\panel.png" />
+    <None Include="Resources\panel1.png" />
     <Content Include="Resources\Sound_34393800 1636125459.mp3" />
   </ItemGroup>
   <ItemGroup>
