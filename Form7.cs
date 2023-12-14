@@ -57,13 +57,13 @@ namespace Hog_Jumper
             if (clickPictureBox7 == 0)
             {
                 textBox2.UseSystemPasswordChar = false;
-                pictureBox7.Image = Image.FromFile("3.jpg");
+                pictureBox7.Image = Image.FromFile("yey_close.png");
                 clickPictureBox7 = 1;
             }
             else
             {
                 textBox2.UseSystemPasswordChar = true;
-                pictureBox7.Image = Image.FromFile("глаз.png");
+                pictureBox7.Image = Image.FromFile("yey_open.png");
                 clickPictureBox7 = 0;
             }
         }
