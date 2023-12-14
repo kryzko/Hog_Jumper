@@ -50,9 +50,11 @@
             // 
             // pictureBox8
             // 
+            this.pictureBox8.Image = global::Hog_Jumper.Properties.Resources.choose;
             this.pictureBox8.Location = new System.Drawing.Point(501, 607);
             this.pictureBox8.Name = "pictureBox8";
             this.pictureBox8.Size = new System.Drawing.Size(158, 54);
+            this.pictureBox8.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBox8.TabIndex = 9;
             this.pictureBox8.TabStop = false;
             this.pictureBox8.Click += new System.EventHandler(this.pictureBox8_Click);
@@ -69,27 +71,33 @@
             // 
             // pictureBox7
             // 
+            this.pictureBox7.Image = global::Hog_Jumper.Properties.Resources.choose;
             this.pictureBox7.Location = new System.Drawing.Point(107, 607);
             this.pictureBox7.Name = "pictureBox7";
             this.pictureBox7.Size = new System.Drawing.Size(158, 54);
+            this.pictureBox7.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBox7.TabIndex = 7;
             this.pictureBox7.TabStop = false;
             this.pictureBox7.Click += new System.EventHandler(this.pictureBox7_Click);
             // 
             // pictureBox6
             // 
+            this.pictureBox6.Image = global::Hog_Jumper.Properties.Resources.choose;
             this.pictureBox6.Location = new System.Drawing.Point(501, 319);
             this.pictureBox6.Name = "pictureBox6";
             this.pictureBox6.Size = new System.Drawing.Size(158, 54);
+            this.pictureBox6.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBox6.TabIndex = 6;
             this.pictureBox6.TabStop = false;
             this.pictureBox6.Click += new System.EventHandler(this.pictureBox6_Click);
             // 
             // pictureBox5
             // 
+            this.pictureBox5.Image = global::Hog_Jumper.Properties.Resources.choose;
             this.pictureBox5.Location = new System.Drawing.Point(115, 319);
             this.pictureBox5.Name = "pictureBox5";
             this.pictureBox5.Size = new System.Drawing.Size(158, 54);
+            this.pictureBox5.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBox5.TabIndex = 5;
             this.pictureBox5.TabStop = false;
             this.pictureBox5.Click += new System.EventHandler(this.pictureBox5_Click);
