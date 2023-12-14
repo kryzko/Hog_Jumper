@@ -15,7 +15,7 @@ namespace Hog_Jumper
     public partial class Form5 : Form
     {
         Player player;
-        Timer timer1;
+        Timer timer2;
         Timer secondTimer;
         Query controller;//для БД
         public int changedSkin;
@@ -59,13 +59,15 @@ namespace Hog_Jumper
         {
             this.Text = "Hog Jump: score - " + PlatformController.score;
             int score = PlatformController.score;
+            label1.Text = score.ToString();
 
             if (player.physics.transform.position.Y >= PlatformController.platforms[0].transform.position.Y + 200)
             {
-                Init();
-               controller.UpdatingRecordsToTable(login.log, score);// запись счета в БД
-                MessageBox.Show("Игра окончена, ваш счет: " + score);
-                timer1.Interval = 0;
+                timer2.Stop();
+                pictureBox2.Visible = true;
+                label1.BringToFront();
+                label1.Visible = true;
+                controller.UpdatingRecordsToTable(login.log, score);// запись счета в БД
             }
             
 
@@ -102,10 +104,10 @@ namespace Hog_Jumper
             InitializeComponent();
             this.StartPosition = FormStartPosition.CenterScreen;
             Init();
-            timer1 = new Timer();
-            timer1.Interval = 15;
-            timer1.Tick += new EventHandler(Update);
-            timer1.Start();
+            timer2 = new Timer();
+            timer2.Interval = 15;
+            timer2.Tick += new EventHandler(Update);
+            timer2.Start();
             this.KeyDown += new KeyEventHandler(OnKeyboardPressed);
             this.KeyUp += new KeyEventHandler(OnKeyboardUp);
             this.BackgroundImage = ThemeSettings.backgroundTheme;
@@ -121,12 +123,21 @@ namespace Hog_Jumper
             form1.timer1.Enabled = false;
             form1.skin1 = this.changedSkin;
             form1.Visible = true;
-            this.Visible = false;
+            this.Close();
         }
 
         private void Form5_FormClosing(object sender, FormClosingEventArgs e)
         {
-            Application.Exit();
+            //Application.Exit();
+        }
+
+        private void pictureBox2_Click(object sender, EventArgs e)
+        {
+            pictureBox2.Visible = false;
+            label1.Visible = false;
+            Init();
+            timer2.Start();
+
         }
     }
 }

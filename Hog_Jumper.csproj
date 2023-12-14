@@ -221,6 +221,7 @@
     <None Include="Resources\Hog1_standing.png" />
     <None Include="Resources\background.png" />
     <None Include="Resources\platform_cl.png" />
+    <None Include="Resources\End.png" />
     <Content Include="Resources\Sound_34393800 1636125459.mp3" />
   </ItemGroup>
   <ItemGroup>
