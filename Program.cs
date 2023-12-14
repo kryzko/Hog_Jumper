@@ -10,7 +10,7 @@ namespace Hog_Jumper
     {
         public MyApplicationContext()
         {
-            Form7 form = new Form7();
+            Form1 form = new Form1();
             form.Show();
         }
     }
