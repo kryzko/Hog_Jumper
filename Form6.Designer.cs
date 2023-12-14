@@ -151,7 +151,7 @@
             // 
             this.pictureBox7.BackColor = System.Drawing.Color.Transparent;
             this.pictureBox7.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.pictureBox7.Image = global::Hog_Jumper.Properties.Resources.глаз;
+            this.pictureBox7.Image = global::Hog_Jumper.Properties.Resources.eye_open;
             this.pictureBox7.Location = new System.Drawing.Point(563, 323);
             this.pictureBox7.Margin = new System.Windows.Forms.Padding(2);
             this.pictureBox7.Name = "pictureBox7";
@@ -166,7 +166,7 @@
             // 
             this.pictureBox8.BackColor = System.Drawing.Color.Transparent;
             this.pictureBox8.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.pictureBox8.Image = global::Hog_Jumper.Properties.Resources.глаз;
+            this.pictureBox8.Image = global::Hog_Jumper.Properties.Resources.eye_open;
             this.pictureBox8.Location = new System.Drawing.Point(563, 404);
             this.pictureBox8.Margin = new System.Windows.Forms.Padding(2);
             this.pictureBox8.Name = "pictureBox8";

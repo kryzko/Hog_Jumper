@@ -183,16 +183,6 @@ namespace Hog_Jumper.Properties {
         /// <summary>
         ///   Поиск локализованного ресурса типа System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap game_name {
-            get {
-                object obj = ResourceManager.GetObject("game_name", resourceCulture);
-                return ((System.Drawing.Bitmap)(obj));
-            }
-        }
-        
-        /// <summary>
-        ///   Поиск локализованного ресурса типа System.Drawing.Bitmap.
-        /// </summary>
         internal static System.Drawing.Bitmap Hog1_standing {
             get {
                 object obj = ResourceManager.GetObject("Hog1_standing", resourceCulture);
