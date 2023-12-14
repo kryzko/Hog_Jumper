@@ -28,8 +28,8 @@ namespace Hog_Jumper
             PlatformController.startPlatformPosY = 300; // подогнать размеры
             PlatformController.score = 0;
             PlatformController.GenerateStartSequance();
-            Form1 newForm = new Form1();
-            changedSkin = newForm.skin1;
+            //Form1 newForm = new Form1();
+            //changedSkin = newForm.skin1;
             player = new Player(changedSkin);
             //player.change();
             //player.sprite = Properties.Resources.Png;
@@ -46,12 +46,22 @@ namespace Hog_Jumper
             switch (e.KeyCode.ToString())
             {
                 case "Right":
+                    if (player.IsFacingLeft)
+                    {
+                        player.sprite.RotateFlip(RotateFlipType.RotateNoneFlipX);
+                        player.IsFacingLeft = false;
+                    }
                     player.physics.dx = 8;
                     break;
                 case "Left":
+                    if (!player.IsFacingLeft)
+                    {
+                        player.sprite.RotateFlip(RotateFlipType.RotateNoneFlipX);
+                        player.IsFacingLeft = true;
+                    }
                     player.physics.dx = -8;
                     break;
-                    
+
             }
         }
 
@@ -69,7 +79,6 @@ namespace Hog_Jumper
                 label1.Visible = true;
                 controller.UpdatingRecordsToTable(login.log, score);// запись счета в БД
             }
-            
 
             player.physics.ApplyPhysics();
             FollowPlayer();
@@ -104,10 +113,16 @@ namespace Hog_Jumper
             InitializeComponent();
             this.StartPosition = FormStartPosition.CenterScreen;
             Init();
+            secondTimer = new Timer();
+            secondTimer.Interval = 5;
+            secondTimer.Tick += new EventHandler(UpdateTimer);
+            secondTimer.Start();
+
             timer2 = new Timer();
             timer2.Interval = 15;
             timer2.Tick += new EventHandler(Update);
             timer2.Start();
+
             this.KeyDown += new KeyEventHandler(OnKeyboardPressed);
             this.KeyUp += new KeyEventHandler(OnKeyboardUp);
             this.BackgroundImage = ThemeSettings.backgroundTheme;
@@ -115,6 +130,12 @@ namespace Hog_Jumper
             this.Height = 600;
             this.Paint += new PaintEventHandler(OnRepaint);
 
+        }
+
+        private void UpdateTimer(object sender, EventArgs e)
+        {
+            Init();
+            secondTimer.Stop();
         }
 
         private void pictureBox1_Click(object sender, EventArgs e)

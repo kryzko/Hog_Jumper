@@ -173,6 +173,36 @@ namespace Hog_Jumper.Properties {
         /// <summary>
         ///   Поиск локализованного ресурса типа System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap Hog2_standing {
+            get {
+                object obj = ResourceManager.GetObject("Hog2_standing", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Поиск локализованного ресурса типа System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Hog3_standing {
+            get {
+                object obj = ResourceManager.GetObject("Hog3_standing", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Поиск локализованного ресурса типа System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Hog4_standing {
+            get {
+                object obj = ResourceManager.GetObject("Hog4_standing", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Поиск локализованного ресурса типа System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap light_theme {
             get {
                 object obj = ResourceManager.GetObject("light_theme", resourceCulture);

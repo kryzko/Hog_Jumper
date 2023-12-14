@@ -59,6 +59,8 @@ namespace Hog_Jumper
         private void pictureBox5_Click(object sender, EventArgs e)
         {
             Form5 form5 = new Form5();
+            form5.changedSkin = this.skin1;
+            MessageBox.Show(form5.changedSkin.ToString());
             form5.Show();
             form5.Size = this.Size;
             this.Visible = false;
