@@ -23,7 +23,6 @@ namespace Hog_Jumper
             this.Width = 600;
             this.Height = 600;
             this.StartPosition = FormStartPosition.CenterScreen;
-            this.BackgroundImage = ThemeSettings.backgroundTheme;
 
             SoundPlayer Player = new SoundPlayer();
             Player.Play();

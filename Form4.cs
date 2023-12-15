@@ -75,6 +75,8 @@ namespace Hog_Jumper
         private void pictureBox3_Click(object sender, EventArgs e)
         {
             ThemeSettings.backgroundTheme = new Bitmap("light_theme.png");
+            ThemeSettings.gameTheme = new Bitmap("background.png");
+            ThemeSettings.platformTheme = new Bitmap("platform_cl.png");
             this.BackgroundImage = ThemeSettings.backgroundTheme;
             SoundPlayer Player = new SoundPlayer();
             Player.SoundLocation = "1.wav";
@@ -85,6 +87,8 @@ namespace Hog_Jumper
         private void pictureBox4_Click(object sender, EventArgs e)
         {
             ThemeSettings.backgroundTheme = new Bitmap("dark_theme.png");
+            ThemeSettings.gameTheme = new Bitmap("background_dark.png");
+            ThemeSettings.platformTheme = new Bitmap("platform_cl_dark.png");
             this.BackgroundImage = ThemeSettings.backgroundTheme;
             SoundPlayer Player = new SoundPlayer();
             Player.SoundLocation = "2.wav";

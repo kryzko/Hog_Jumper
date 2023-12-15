@@ -126,7 +126,7 @@ namespace Hog_Jumper
 
             this.KeyDown += new KeyEventHandler(OnKeyboardPressed);
             this.KeyUp += new KeyEventHandler(OnKeyboardUp);
-            this.BackgroundImage = ThemeSettings.backgroundTheme;
+            this.BackgroundImage = ThemeSettings.gameTheme;
             this.Width = 600;
             this.Height = 600;
             this.Paint += new PaintEventHandler(OnRepaint);

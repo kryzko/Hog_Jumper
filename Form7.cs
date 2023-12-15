@@ -21,7 +21,9 @@ namespace Hog_Jumper
             this.StartPosition = FormStartPosition.CenterScreen;
             controller = new Query(ConnectionString.ConnectStr);
             textBox2.UseSystemPasswordChar = true;
-            ThemeSettings.backgroundTheme = this.BackgroundImage;
+            ThemeSettings.backgroundTheme = Image.FromFile("light_theme.png");
+            ThemeSettings.gameTheme = Image.FromFile("background.png");
+            ThemeSettings.platformTheme = Image.FromFile("platform_cl.png");
             Form5 form5 = new Form5();
             this.Size = form5.Size;
         }

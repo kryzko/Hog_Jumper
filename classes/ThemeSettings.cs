@@ -10,5 +10,7 @@ namespace Hog_Jumper.classes
     public static class ThemeSettings
     {
         public static Image backgroundTheme { get; set; }
+        public static Image gameTheme { get; set;}
+        public static Image platformTheme { get; set;}
     }
 }

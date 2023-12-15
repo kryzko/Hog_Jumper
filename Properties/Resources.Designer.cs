@@ -93,6 +93,16 @@ namespace Hog_Jumper.Properties {
         /// <summary>
         ///   Поиск локализованного ресурса типа System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap background_dark {
+            get {
+                object obj = ResourceManager.GetObject("background_dark", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Поиск локализованного ресурса типа System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap backgroundMainMenu1 {
             get {
                 object obj = ResourceManager.GetObject("backgroundMainMenu1", resourceCulture);
@@ -183,6 +193,16 @@ namespace Hog_Jumper.Properties {
         /// <summary>
         ///   Поиск локализованного ресурса типа System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap game_name {
+            get {
+                object obj = ResourceManager.GetObject("game_name", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Поиск локализованного ресурса типа System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap Hog1_standing {
             get {
                 object obj = ResourceManager.GetObject("Hog1_standing", resourceCulture);
@@ -256,6 +276,16 @@ namespace Hog_Jumper.Properties {
         internal static System.Drawing.Bitmap platform_cl {
             get {
                 object obj = ResourceManager.GetObject("platform_cl", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Поиск локализованного ресурса типа System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap platform_cl_dark {
+            get {
+                object obj = ResourceManager.GetObject("platform_cl_dark", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
