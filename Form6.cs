@@ -122,5 +122,11 @@ namespace Hog_Jumper
             form7.Visible = true;
             this.Visible = false;
         }
+
+        private void Form6_Load(object sender, EventArgs e)
+        {
+            this.MaximizeBox = false;
+            this.MinimizeBox = false;
+        }
     }
 }

@@ -57,5 +57,11 @@ namespace Hog_Jumper
         {
             skin3 = 3;
         }
+
+        private void Form3_Load(object sender, EventArgs e)
+        {
+            this.MaximizeBox = false;
+            this.MinimizeBox = false;
+        }
     }
 }

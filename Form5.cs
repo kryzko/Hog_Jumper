@@ -175,5 +175,11 @@ namespace Hog_Jumper
             
       
         }
+
+        private void Form5_Load(object sender, EventArgs e)
+        {
+            this.MaximizeBox = false;
+            this.MinimizeBox = false;
+        }
     }
 }

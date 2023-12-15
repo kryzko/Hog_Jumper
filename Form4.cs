@@ -68,7 +68,8 @@ namespace Hog_Jumper
 
         private void Form4_Load(object sender, EventArgs e)
         {
-
+            this.MaximizeBox = false;
+            this.MinimizeBox = false;
         }
 
         private void pictureBox3_Click(object sender, EventArgs e)
