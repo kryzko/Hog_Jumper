@@ -20,6 +20,7 @@ namespace Hog_Jumper
         Timer secondTimer;
         Query controller;//для БД
         public int changedSkin;
+        public bool flag = false;  
 
         public void Init()
         {
@@ -153,12 +154,18 @@ namespace Hog_Jumper
             if (MusicSkin.MusicEnabled) { Player.Play(); }
             form1.skin1 = this.changedSkin;
             form1.Visible = true;
+            flag = true;
+
             this.Close();
         }
 
         private void Form5_FormClosing(object sender, FormClosingEventArgs e)
         {
-            //Application.Exit();
+            if (!flag)
+            {
+                flag = true;
+                Application.Exit();
+            }
         }
 
         private void pictureBox2_Click(object sender, EventArgs e)
