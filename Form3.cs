@@ -43,25 +43,37 @@ namespace Hog_Jumper
 
         private void pictureBox9_Click(object sender, EventArgs e)
         {
-           
+            pictureBox10.BorderStyle = BorderStyle.FixedSingle;
+            pictureBox2.BorderStyle = BorderStyle.None;
+            pictureBox3.BorderStyle = BorderStyle.None;
+            pictureBox4.BorderStyle = BorderStyle.None;
             skin3 = 0;
         }
 
         private void pictureBox5_Click_1(object sender, EventArgs e)
         {
-           
+            pictureBox2.BorderStyle = BorderStyle.FixedSingle;
+            pictureBox10.BorderStyle = BorderStyle.None;
+            pictureBox3.BorderStyle = BorderStyle.None;
+            pictureBox4.BorderStyle = BorderStyle.None;
             skin3 = 1;
         }
 
         private void pictureBox6_Click_1(object sender, EventArgs e)
         {
-            
+            pictureBox3.BorderStyle = BorderStyle.FixedSingle;
+            pictureBox2.BorderStyle = BorderStyle.None;
+            pictureBox10.BorderStyle = BorderStyle.None;
+            pictureBox4.BorderStyle = BorderStyle.None;
             skin3 = 2;
         }
 
         private void pictureBox7_Click_1(object sender, EventArgs e)
         {
-            
+            pictureBox4.BorderStyle = BorderStyle.FixedSingle;
+            pictureBox2.BorderStyle = BorderStyle.None;
+            pictureBox3.BorderStyle = BorderStyle.None;
+            pictureBox10.BorderStyle = BorderStyle.None;
             skin3 = 3;
         }
 

@@ -76,9 +76,12 @@ namespace Hog_Jumper
             if (player.physics.transform.position.Y >= PlatformController.platforms[0].transform.position.Y + 200)
             {
                 timer2.Stop();
+                label1.Visible = true;
+                label2.Visible = true;
+                label3.Visible = true;
                 pictureBox2.Visible = true;
                 label1.BringToFront();
-                label1.Visible = true;
+                
                 controller.UpdatingRecordsToTable(login.log, score);// запись счета в БД
             }
 
@@ -166,10 +169,7 @@ namespace Hog_Jumper
 
         private void pictureBox2_Click(object sender, EventArgs e)
         {
-            pictureBox2.Visible = false;
-            label1.Visible = false;
-            Init();
-            timer2.Start();
+            
 
         }
 
@@ -189,6 +189,16 @@ namespace Hog_Jumper
         private void timer3_Tick(object sender, EventArgs e)
         {
 
+        }
+
+        private void label3_Click(object sender, EventArgs e)
+        {
+            pictureBox2.Visible = false;
+            label1.Visible = false;
+            label2.Visible = false;
+            label3.Visible = false;
+            Init();
+            timer2.Start();
         }
     }
 }

@@ -16,12 +16,21 @@ namespace Hog_Jumper
     public partial class Form4 : Form
     {
 
-        bool isOn = true;
+        
         public Form4()
         {
             InitializeComponent();
             this.BackgroundImage = ThemeSettings.backgroundTheme;
             this.StartPosition = FormStartPosition.CenterScreen;
+            if (!MusicSkin.MusicEnabled)
+            {
+                pictureBox2.Image = Image.FromFile("sound_no.png");
+                
+            }
+            else if (MusicSkin.MusicEnabled)
+            {
+                pictureBox2.Image = Image.FromFile("sound_yes.png");
+            }
         }
 
         private void pictureBox1_Click(object sender, EventArgs e)
@@ -36,22 +45,18 @@ namespace Hog_Jumper
         {
             string projectDirectory = Directory.GetParent(Directory.GetCurrentDirectory()).Parent.FullName;
             string propertiesPath = Path.Combine(projectDirectory, "Resources");
-            if (isOn)
+            if (MusicSkin.MusicEnabled)
             { 
                 pictureBox2.Image = Image.FromFile("sound_no.png");
-                isOn = false;
-
                 SoundPlayer Player = new SoundPlayer();
                 if (MusicSkin.MusicNum == 1) { Player.SoundLocation = "1.wav"; }
                 else { Player.SoundLocation = "2.wav"; }
                 MusicSkin.MusicEnabled = false;
                 Player.Stop();
             }
-            else if (!isOn)
+            else if (!MusicSkin.MusicEnabled)
             {
                 pictureBox2.Image = Image.FromFile( "sound_yes.png");
-                isOn= true;
-
                 SoundPlayer Player = new SoundPlayer();
                 if (MusicSkin.MusicNum == 1) { Player.SoundLocation = "1.wav"; }
                 else { Player.SoundLocation = "2.wav"; }

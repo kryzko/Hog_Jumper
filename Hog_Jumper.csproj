@@ -234,6 +234,8 @@
     <None Include="Resources\background_dark.png" />
     <None Include="Resources\game_name1.png" />
     <None Include="Resources\platform_cl_dark.png" />
+    <None Include="Resources\authorization_panel.png" />
+    <None Include="Resources\registration_panel.png" />
     <Content Include="Resources\Sound_34393800 1636125459.mp3" />
   </ItemGroup>
   <ItemGroup>
