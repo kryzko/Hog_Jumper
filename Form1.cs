@@ -36,7 +36,7 @@ namespace Hog_Jumper
         private void pictureBox2_Click(object sender, EventArgs e)
         {
             Form2 form2 = new Form2();
-            form2.Show();
+            form2.Visible = true;
             form2.Size = this.Size;
             this.Visible = false;
         }
@@ -45,7 +45,7 @@ namespace Hog_Jumper
         {
             Form3 form3 = new Form3();
             form3.skin3 = this.skin1;
-            form3.Show();
+            form3.Visible = true;
             form3.Size = this.Size;
             this.Visible = false;
         }
@@ -53,7 +53,7 @@ namespace Hog_Jumper
         private void pictureBox4_Click(object sender, EventArgs e)
         {
             Form4 form4 = new Form4();
-            form4.Show();
+            form4.Visible = true ;
             form4.Size = this.Size;
             this.Visible = false;
         }
@@ -62,7 +62,10 @@ namespace Hog_Jumper
         {
             Form5 form5 = new Form5();
             form5.changedSkin = this.skin1;
-            form5.Show();
+            SoundPlayer Player = new SoundPlayer();
+            Player.SoundLocation = "6.wav";
+            if (MusicSkin.MusicEnabled) { Player.PlayLooping(); }
+            form5.Visible = true;
             form5.Size = this.Size;
             this.Visible = false;
         }

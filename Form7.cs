@@ -6,6 +6,7 @@ using System.ComponentModel;
 using System.Data;
 using System.Drawing;
 using System.Linq;
+using System.Media;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
@@ -26,6 +27,7 @@ namespace Hog_Jumper
             ThemeSettings.platformTheme = Image.FromFile("platform_cl.png");
             Form5 form5 = new Form5();
             this.Size = form5.Size;
+            
         }
 
         private void pictureBox2_Click(object sender, EventArgs e)

@@ -132,10 +132,6 @@ namespace Hog_Jumper
             this.Height = 600;
             this.Paint += new PaintEventHandler(OnRepaint);
 
-            SoundPlayer Player = new SoundPlayer();
-            Player.SoundLocation = "6.wav";
-            if (MusicSkin.MusicEnabled) { Player.PlayLooping(); }
-
         }
 
         private void UpdateTimer(object sender, EventArgs e)
@@ -179,14 +175,20 @@ namespace Hog_Jumper
 
         private void timer1_Tick(object sender, EventArgs e)
         {
+
             
-      
+     
         }
 
         private void Form5_Load(object sender, EventArgs e)
         {
             this.MaximizeBox = false;
             this.MinimizeBox = false;
+        }
+
+        private void timer3_Tick(object sender, EventArgs e)
+        {
+
         }
     }
 }
