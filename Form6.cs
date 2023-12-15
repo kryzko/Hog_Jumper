@@ -25,6 +25,8 @@ namespace Hog_Jumper
             this.StartPosition = FormStartPosition.CenterScreen;
             int score =  100;
             //controller.UpdatingRecordsToTable("veronika1", score);
+            Form5 form5 = new Form5();
+            this.Size = form5.Size;
 
         }
 

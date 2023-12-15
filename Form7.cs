@@ -22,6 +22,8 @@ namespace Hog_Jumper
             controller = new Query(ConnectionString.ConnectStr);
             textBox2.UseSystemPasswordChar = true;
             ThemeSettings.backgroundTheme = this.BackgroundImage;
+            Form5 form5 = new Form5();
+            this.Size = form5.Size;
         }
 
         private void pictureBox2_Click(object sender, EventArgs e)
