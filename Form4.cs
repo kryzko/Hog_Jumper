@@ -81,7 +81,7 @@ namespace Hog_Jumper
             SoundPlayer Player = new SoundPlayer();
             Player.SoundLocation = "1.wav";
             MusicSkin.MusicNum = 1;
-            if (MusicSkin.MusicEnabled) { Player.Play(); }
+            if (MusicSkin.MusicEnabled) { Player.PlayLooping(); }
         }
 
         private void pictureBox4_Click(object sender, EventArgs e)
@@ -93,7 +93,7 @@ namespace Hog_Jumper
             SoundPlayer Player = new SoundPlayer();
             Player.SoundLocation = "2.wav";
             MusicSkin.MusicNum = 2;
-            if (MusicSkin.MusicEnabled) { Player.Play(); }
+            if (MusicSkin.MusicEnabled) { Player.PlayLooping(); }
         }
     }
 }

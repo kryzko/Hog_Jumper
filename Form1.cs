@@ -71,7 +71,7 @@ namespace Hog_Jumper
         {
             SoundPlayer Player = new SoundPlayer();
             Player.SoundLocation = "1.wav";
-            if (MusicSkin.MusicEnabled) { Player.Play(); }
+            if (MusicSkin.MusicEnabled) { Player.PlayLooping(); }
             timer1.Enabled = false;
         }
 

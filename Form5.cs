@@ -134,7 +134,7 @@ namespace Hog_Jumper
 
             SoundPlayer Player = new SoundPlayer();
             Player.SoundLocation = "6.wav";
-            if (MusicSkin.MusicEnabled) { Player.Play(); }
+            if (MusicSkin.MusicEnabled) { Player.PlayLooping(); }
 
         }
 
@@ -151,7 +151,7 @@ namespace Hog_Jumper
             SoundPlayer Player = new SoundPlayer();
             if (MusicSkin.MusicNum == 1) { Player.SoundLocation = "1.wav"; }
             else { Player.SoundLocation = "2.wav"; }
-            if (MusicSkin.MusicEnabled) { Player.Play(); }
+            if (MusicSkin.MusicEnabled) { Player.PlayLooping(); }
             form1.skin1 = this.changedSkin;
             form1.Visible = true;
             flag = true;
